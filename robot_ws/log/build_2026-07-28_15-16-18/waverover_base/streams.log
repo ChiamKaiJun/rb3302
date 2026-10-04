@@ -1,0 +1,18 @@
+[2.069s] Invoking command in '/home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base': PYTHONPATH=/home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base/build --no-deps symlink_data
+[2.564s] running develop
+[2.891s] running egg_info
+[2.922s] writing waverover_base.egg-info/PKG-INFO
+[2.924s] writing dependency_links to waverover_base.egg-info/dependency_links.txt
+[2.926s] writing entry points to waverover_base.egg-info/entry_points.txt
+[2.927s] writing requirements to waverover_base.egg-info/requires.txt
+[2.928s] writing top-level names to waverover_base.egg-info/top_level.txt
+[2.994s] reading manifest file 'waverover_base.egg-info/SOURCES.txt'
+[2.995s] writing manifest file 'waverover_base.egg-info/SOURCES.txt'
+[3.028s] running build_ext
+[3.030s] Creating /home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base/lib/python3.12/site-packages/waverover-base.egg-link (link to .)
+[3.032s] Installing keyboard_teleop script to /home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base/lib/waverover_base
+[3.034s] Installing waverover_driver script to /home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base/lib/waverover_base
+[3.036s] 
+[3.037s] Installed /home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base
+[3.039s] running symlink_data
+[3.110s] Invoked command in '/home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base' returned '0': PYTHONPATH=/home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/rb3302_final_proj_code/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/rb3302_final_proj_code/robot_ws/build/waverover_base/build --no-deps symlink_data

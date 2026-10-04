@@ -1,0 +1,70 @@
+[0.039s] Invoking command in '/home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/rb3302_final_proj_code/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial
+[0.322s] -- The C compiler identification is GNU 13.3.0
+[0.557s] -- The CXX compiler identification is GNU 13.3.0
+[0.605s] -- Detecting C compiler ABI info
+[0.848s] -- Detecting C compiler ABI info - done
+[0.861s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.862s] -- Detecting C compile features
+[0.863s] -- Detecting C compile features - done
+[0.902s] -- Detecting CXX compiler ABI info
+[1.190s] -- Detecting CXX compiler ABI info - done
+[1.204s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.205s] -- Detecting CXX compile features
+[1.207s] -- Detecting CXX compile features - done
+[1.215s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.603s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.821s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.926s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.194s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.315s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.496s] -- Configuring done (2.4s)
+[2.504s] -- Generating done (0.0s)
+[2.508s] -- Build files have been written to: /home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial
+[2.528s] Invoked command in '/home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/rb3302_final_proj_code/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial
+[2.534s] Invoking command in '/home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial -- -j8 -l8
+[2.684s] [ 25%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[2.685s] [ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[2.703s] [ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[3.324s] [01m[K/home/ubuntu/rb3302_final_proj_code/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >[01;32m[K glob[m[K(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[3.325s] [01m[K/home/ubuntu/rb3302_final_proj_code/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:66:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.326s]    66 |     for(int path_index = 0; [01;35m[Kpath_index < glob_results.gl_pathc[m[K; path_index++)
+[3.326s]       |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.327s] [01m[K/home/ubuntu/rb3302_final_proj_code/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:57:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kglob_retval[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[3.328s]    57 |     int [01;35m[Kglob_retval[m[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);
+[3.328s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[3.329s] [01m[K/home/ubuntu/rb3302_final_proj_code/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::string[01;32m[K format[m[K(const char*, ...)[m[K’:
+[3.330s] [01m[K/home/ubuntu/rb3302_final_proj_code/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:246:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.331s]   246 |         else if( [01;35m[Kreturn_value >= buffer_size_bytes[m[K )
+[3.331s]       |                  [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[3.691s] [100%] [32m[1mLinking CXX static library libserial.a[0m
+[3.817s] [100%] Built target serial
+[3.840s] Invoked command in '/home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial -- -j8 -l8
+[3.843s] Invoking command in '/home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial
+[3.878s] -- Install configuration: ""
+[3.880s] -- Execute custom install script
+[3.881s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/lib/libserial.a
+[3.895s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/environment/library_path.sh
+[3.932s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/environment/library_path.dsv
+[3.970s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/include/serial/impl/unix.h
+[3.988s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/include/serial/impl/win.h
+[4.009s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/include/serial/serial.h
+[4.043s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/include/serial/v8stdint.h
+[4.063s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[4.083s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[4.098s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[4.144s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[4.192s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/environment/path.sh
+[4.234s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/environment/path.dsv
+[4.252s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/local_setup.bash
+[4.270s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/local_setup.sh
+[4.284s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/local_setup.zsh
+[4.300s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/local_setup.dsv
+[4.318s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/package.dsv
+[4.349s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/ament_index/resource_index/packages/serial
+[4.381s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.408s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[4.423s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.441s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[4.458s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[4.476s] -- Symlinking: /home/ubuntu/rb3302_final_proj_code/robot_ws/install/serial/share/serial/package.xml
+[4.494s] Invoked command in '/home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/rb3302_final_proj_code/robot_ws/build/serial
