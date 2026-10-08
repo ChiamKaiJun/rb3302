@@ -1,7 +1,7 @@
 image: rb3302_map.pgm
 mode: trinary
 resolution: 0.050
-origin: [-1.134, -2.150, 0]
+origin: [-3.256, -0.948, 0]
 negate: 0
 occupied_thresh: 0.65
 free_thresh: 0.196

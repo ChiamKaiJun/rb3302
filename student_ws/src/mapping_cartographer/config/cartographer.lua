@@ -37,7 +37,7 @@ TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.15
 TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(2.0)
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.translation_weight = 1.0
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 1.0
-TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = TRUE
+TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
 POSE_GRAPH.constraint_builder.min_score = 0.70
 POSE_GRAPH.optimize_every_n_nodes = 90
 
