@@ -35,7 +35,9 @@ def render_stage1(
     draw = ImageDraw.Draw(img)
 
     def to_px(x: float, y: float) -> tuple[float, float]:
-        return x / course.resolution * cell, (course.height_m - y) / course.resolution * cell
+        px = (x - float(course.origin_xy[0])) / course.resolution * cell
+        py = (course.height_m - (y - float(course.origin_xy[1]))) / course.resolution * cell
+        return px, py
 
     if len(path) >= 2:
         draw.line([to_px(x, y) for x, y in path], fill=(220, 40, 40), width=3)

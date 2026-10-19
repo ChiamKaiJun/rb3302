@@ -1,10 +1,12 @@
 # Stage 1.1–1.3 simulator
 
-Checks the first three Stage 1 items without Gazebo or ROS:
+Checks the first three Stage 1 items. Gazebo is not required.
+
+The map is `student_ws/maps/rb3302_map.pgm`. Letter centres are simulation coordinates: the free rectangle is split into 6 columns and 4 rows, A-F north, S at the south-west cell. Measured A-X clicks are not filled in yet.
 
 1. Manual grid input: spawn letter + heading, exactly four goal letters.
-2. Map loaded, robot drawn at that spawn, goals drawn on their squares.
-3. A* plans from the spawn centre to the first goal. The path stays off the walls.
+2. That map is loaded and the robot is drawn at the spawn cell.
+3. A* plans from the spawn centre to the first goal. The path stays off occupied cells.
 
 ```bash
 cd stage1_sim/..

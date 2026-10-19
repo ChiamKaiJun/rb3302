@@ -31,6 +31,7 @@ class CourseTest(unittest.TestCase):
         course = CourseMap()
         self.assertGreater(course.cells["A"].center[1], course.cells["S"].center[1])
         self.assertGreater(course.cells["X"].center[0], course.cells["S"].center[0])
+        self.assertEqual(course.resolution, 0.05)
 
 
 class Stage1Test(unittest.TestCase):

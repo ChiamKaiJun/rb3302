@@ -20,7 +20,7 @@ NEIGHBORS = (
 )
 
 
-def plan_path(course: CourseMap, start_xy: tuple[float, float], goal_xy: tuple[float, float], robot_radius: float = 0.13) -> np.ndarray:
+def plan_path(course: CourseMap, start_xy: tuple[float, float], goal_xy: tuple[float, float], robot_radius: float = 0.05) -> np.ndarray:
     """Return world-frame waypoints. Empty array means no free path."""
     blocked = course.inflate(robot_radius)
     si, sj = _nearest_free(course, blocked, *course.world_to_grid(*start_xy))

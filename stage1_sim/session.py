@@ -55,9 +55,9 @@ class Stage1Result:
         return self.spawn_ok and self.goals_ok and self.plan_ok
 
 
-def run_stage1(start: str, bearing: str, goals: list[str], resolution: float = 0.04) -> Stage1Result:
+def run_stage1(start: str, bearing: str, goals: list[str], map_yaml: str | None = None) -> Stage1Result:
     start, bearing, goals = validate_run_inputs(start, bearing, goals)
-    course = CourseMap(resolution=resolution)
+    course = CourseMap(map_yaml)
     yaw = bearing_yaw(bearing)
     spawn = course.cells[start].center
     checks = []
