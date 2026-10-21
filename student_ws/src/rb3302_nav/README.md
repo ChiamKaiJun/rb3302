@@ -1,6 +1,6 @@
-# Stage 1: inputs -> first Nav2 path -> picture
+# RB3302: first-path check and localisation check
 
-Scope: accept S0, B0 and exactly four ordered goals; plan S0 to S1; save the actual
+The `stage1.launch.py` check accepts S0, B0 and exactly four ordered goals; plan S0 to S1; save the actual
 returned Nav2 path as a PNG. Repeated goals are preserved. No AMCL, synthetic
 sensors, odometry, controller or robot movement is involved.
 
@@ -84,9 +84,32 @@ and relaunch to test another programmed start. Each successful request writes th
 chosen output image (overwriting an existing image at that path). A failed request
 returns an error; an older PNG is not evidence of a successful new plan.
 
-The image shows walls/unknown in dark colours, the programmed start as a blue
-heading triangle, first goal in green, later goals in orange, and the returned path
-in red. Repeated goal labels are grouped, e.g. `2,3:N`.
+The image shows black occupied cells, grey unknown cells, A-X labels, the programmed
+start as a blue heading triangle, first goal in green, later goals in orange, and
+the returned path in red with direction arrowheads. Repeated goal labels are grouped,
+e.g. `2,3:N`.
+
+A matching `first_path.txt` is also written beside `first_path.png`. It contains:
+start pose and bearing, all four goals, map/calibration information, total path length,
+grouped 8-compass-direction segments, and all raw Nav2 path coordinates. The terminal
+prints the summary. Segment directions are for debugging, not controller commands.
+They use the course heading offset, whereas raw coordinates use the map frame.
+
+Today's acceptance checks:
+
+| Run | Expected result |
+| --- | --- |
+| S/E with [T,N,H,A] | S -> T path, correct heading marker and ordered goal labels |
+| S/N with [T,N,H,A] | Starting marker faces N; NavFn may return the same 2D route |
+| S/E with [T,N,N,A] | Duplicate N retained and labelled 2,3; still plan only S -> T |
+| S/E with [S,N,H,A] | Same-cell first goal is handled; path length should be near zero |
+| Longer route, e.g. S/E with [H,T,N,A] | Inspect wall clearance and direction changes |
+| Invalid start/goal or three goals | Reject input before planning |
+
+A no-path result must report a planner error, not draw a successful replacement route.
+Changing heading alone need not change NavFn's route: its global search is 2D and
+not heading-constrained. Inspect clearance in the Nav2 costmap; the PNG's path line
+by itself does not show the entire swept robot outline.
 
 Nav2's costmap needs a robot-frame TF even with an explicit start. This launch supplies
 `map -> planning_start`, representing only the programmed input. It does not publish
@@ -143,3 +166,95 @@ Durability `Transient Local`, and Reliability `Reliable`. RViz receives a
 needed to display this map. The A-X overlay is not included in `/map`.
 If the Stage 1 launch already runs, its map server is active: just start RViz,
 without launching a second map server or repeating its lifecycle transitions.
+
+## Localisation check using standard Nav2 AMCL
+
+Two files: `launch/localization.launch.py` includes the installed Nav2
+`nav2_bringup/launch/localization_launch.py`; `config/localization.yaml` supplies
+our frame names and EKF sensor selections. Nav2 starts the map server, AMCL and
+lifecycle manager. Our EKF supplies odom -> base_link. AMCL supplies map -> odom.
+The original EKF configuration is in `planning_rpp/launch/planning.launch.py`.
+
+For this first test, `run.yaml` does not initialise AMCL: use RViz's 2D Pose Estimate.
+The first-path check remains a separate command and does not run concurrently.
+
+1. Stop the standalone map server, Cartographer, first-path launch, and other Nav2
+   launches. Keep robot drivers running. On the robot, source `robot_ws/install/setup.bash`
+   and run `ros2 launch robot_init robot.launch.py` if not already running.
+2. On the lab ROS machine, from the main project directory:
+
+```bash
+source /opt/ros/jazzy/setup.bash
+cd student_ws
+rosdep install --from-paths src/rb3302_nav --ignore-src -r -y
+colcon build --symlink-install --packages-select rb3302_nav
+source install/setup.bash
+ros2 launch rb3302_nav localization.launch.py map:="$PWD/maps/rb3302_map.yaml"
+```
+
+`source` loads ROS and the built workspace into this terminal. `rosdep install`
+installs declared dependencies (needed when dependencies change). `colcon build`
+installs our package and launch/config files. `ros2 launch` starts our small wrapper;
+`map:=...` passes the absolute map YAML path. Lifecycle activation is automatic.
+If another EKF already publishes odom -> base_link, use `start_ekf:=false`.
+
+3. Another ROS terminal, from the main project directory:
+
+```bash
+source /opt/ros/jazzy/setup.bash
+rviz2 -d "$PWD/student_ws/src/planning_rpp/rviz/navigation.rviz"
+```
+
+`-d` loads the existing saved RViz display config. Keep Map, LaserScan, RobotModel,
+and TF enabled. Disable GlobalPlan and WaypointMarkers for this test. The existing
+AMCLParticles display may need a Nav2 ParticleCloud plugin on Jazzy; it is not needed
+for the first pose/scan checks. To see the estimated pose directly, add the
+PoseWithCovariance display for `/amcl_pose` (Transient Local durability).
+
+4. Place base_link at a physically measured location and heading. Use 2D Pose Estimate:
+   click its approximate location and drag in the direction the robot faces. This
+   publishes an initial estimate, not proof of accuracy. Verify laser returns line
+   up with several real mapped walls, not just a single wall.
+5. Drive a short known distance slowly using the existing keyboard teleoperation
+   tool, stop and measure. Then turn 90 degrees and return. Do not lift or drag the
+   robot during a normal odometry/localisation trial.
+
+Inspect estimated position/orientation with:
+
+```bash
+ros2 run tf2_ros tf2_echo map base_link
+```
+
+This runs the TF inspection program: it prints the estimated transform from the
+map frame to the robot frame, including position and orientation. Compare that
+with independent tape measurements and a marked heading. To inspect AMCL's own
+estimate and covariance, `ros2 topic echo /amcl_pose --once` prints one message.
+
+Suggested initial acceptance targets (engineering targets, not assessment rules):
+
+| Case | Evidence |
+| --- | --- |
+| Stationary at known pose | Several walls align; position error <=0.10 m, heading error <=10 degrees |
+| Move a measured 0.6 m, then stop | Estimated displacement and final position agree with independent measurements |
+| Turn 90 degrees, then return | Estimated heading follows; little estimated translation during the turn |
+| Return to start | Pose returns within 0.10 m / 10 degrees without another initial-pose click |
+| Repeat at three distinct positions, five trials each | Record errors and failures; don't infer success from one location |
+
+The current letter centres are estimated from an image overlay, so they are not
+independent ground truth for a centimetre-accuracy claim. Measure actual label/base
+positions or distances to fixed walls. A small particle cloud/covariance alone can
+be confidently wrong. Passing these trials supports measured accuracy, not universal
+proof of localisation. Tune only after map, TF, sensor alignment and odometry checks.
+
+Code/configuration syntax was checked locally. ROS startup and hardware localisation
+must still be verified on the lab ROS 2 Jazzy machine; this Mac has no ROS runtime.
+
+### RViz versus simulation
+
+RViz displaying the saved map is visualisation only. AMCL also requires scans and
+odometry/TF from a real robot or simulator. The map alone cannot provide them.
+For a simulator that publishes `/scan`, odom -> base_link, sensor transforms and
+`/clock`, pass `use_sim_time:=true start_ekf:=false` to the localisation launch.
+RViz must also use simulation time, e.g. `--ros-args -p use_sim_time:=true`.
+These arguments do not start a simulator. The simulator must use an environment
+consistent with the saved map. Hardware `robot_init` is only for the real robot.

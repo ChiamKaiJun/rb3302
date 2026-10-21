@@ -1,6 +1,12 @@
 image: rb3302_map.pgm
 mode: trinary
 resolution: 0.050
+# Saved map placement: [x metres, y metres, yaw radians].
+# These existing values place the image's bottom-left OUTER corner at
+# (-1.134, -2.150) in the ROS map frame; this is NOT the robot's starting pose.
+# With yaw=0, +X points RIGHT and +Y points UP on the displayed map.
+# Image pixel rows count DOWN from the top, opposite to map +Y.
+# Map-frame (0,0) is 1.134 m right and 2.150 m up from that corner.
 origin: [-1.134, -2.150, 0]
 negate: 0
 occupied_thresh: 0.65

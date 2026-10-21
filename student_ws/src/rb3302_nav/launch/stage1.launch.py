@@ -29,6 +29,9 @@ def start(context):
         Node(package='tf2_ros', executable='static_transform_publisher',
              arguments=['--x', str(x), '--y', str(y), '--yaw', str(yaw),
                         '--frame-id', 'map', '--child-frame-id', 'planning_start']),
+        # The map's origin is read from rb3302_map.yaml: [-1.134, -2.150, 0].
+        # For that map, +X is image-right and +Y is image-up (yaw=0).
+        # The planning_start transform above sets the input pose, NOT this origin.
         Node(package='nav2_map_server', executable='map_server', name='map_server',
              parameters=[params, {'yaml_filename': str(course.map.yaml_path)}], output='screen'),
         Node(package='nav2_planner', executable='planner_server', name='planner_server',

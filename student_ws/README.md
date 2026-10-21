@@ -1,7 +1,8 @@
 # RB3302 Final Project 
 
 Stage 1 input and first-path check: see [rb3302_nav](src/rb3302_nav/README.md).
-It uses Nav2 A* with an explicit starting pose and saves a path image. No AMCL or movement.
+That planning check uses Nav2 A* with an explicit starting pose and saves a path image.
+For the separate standard Nav2 AMCL check, see the localisation section in the same guide.
 
 This repository contains two ROS 2 workspaces for the RB3302 final project:
 

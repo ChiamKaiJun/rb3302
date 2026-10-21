@@ -12,7 +12,7 @@ from geometry_msgs.msg import PoseStamped
 from lifecycle_msgs.srv import GetState
 from nav2_msgs.action import ComputePathToPose
 from rb3302_nav.course import Course, Run
-from rb3302_nav.render import render_stage1
+from rb3302_nav.render import render_stage1, format_path_report
 
 
 class FirstPath(Node):
@@ -24,6 +24,14 @@ class FirstPath(Node):
         self.course = Course(self.get_parameter('course_file').value)
         self.run_inputs = Run.load(self.get_parameter('run_file').value)
         self.course.validate(self.run_inputs)
+        x, y, yaw = self.course.start_pose(self.run_inputs)
+        output = Path(self.get_parameter('output_file').value).expanduser().resolve()
+        self.get_logger().info(
+            f'Selected start: {self.run_inputs.start}, bearing {self.run_inputs.bearing}; '
+            f'map pose x={x:.3f} m, y={y:.3f} m, yaw={math.degrees(yaw):.1f} deg')
+        self.get_logger().info(
+            f'Ordered goals: {self.run_inputs.goals}; planning only to {self.run_inputs.goals[0]}')
+        self.get_logger().info(f'PNG will be saved after a successful plan: {output}')
         self.client = ActionClient(self, ComputePathToPose, '/compute_path_to_pose')
         self.state_client = self.create_client(GetState, '/planner_server/get_state')
 
@@ -42,6 +50,7 @@ class FirstPath(Node):
         return msg
 
     def plan(self):
+        self.get_logger().info('Waiting for Nav2 planner activation...')
         # Wait for activation, not merely the existence of an action server.
         if not self.state_client.wait_for_service(timeout_sec=30.0):
             raise RuntimeError('Start the planning launch first: planner lifecycle service is missing')
@@ -56,6 +65,7 @@ class FirstPath(Node):
         if not self.client.wait_for_server(timeout_sec=5.0):
             raise RuntimeError('Nav2 planning action is unavailable')
         course, run = self.course, self.run_inputs
+        # Convert our selected letters into ROS poses and ask the installed Nav2 planner.
         goal = ComputePathToPose.Goal()
         goal.start = self.pose(*course.start_pose(run))
         goal.goal = self.pose(*course.letters[run.goals[0]])
@@ -70,17 +80,24 @@ class FirstPath(Node):
             self.wait(handle.cancel_goal_async(), 5.0)
             raise
         if result.status != GoalStatus.STATUS_SUCCEEDED or result.result.error_code:
-            raise RuntimeError(f'Nav2 planning failed: status={result.status}, error={result.result.error_code}')
+            raise RuntimeError(f'Nav2 planning failed: status={result.status}, error={result.result.error_code}, '
+                               f'detail={getattr(result.result, "error_msg", "")}. '
+                               'Check start/goal clearance and connectivity in the costmap.')
         points = np.array([(p.pose.position.x, p.pose.position.y) for p in result.result.path.poses])
         if not len(points):
             raise RuntimeError('Nav2 returned an empty path')
+        # Draw the returned path; this file does not implement A* or move a robot.
         output = Path(self.get_parameter('output_file').value).expanduser().resolve()
         output.parent.mkdir(parents=True, exist_ok=True)
         x, y, yaw = course.start_pose(run)
         render_stage1(course.map, (x, y), yaw,
-                      [(g, course.letters[g]) for g in run.goals], points, str(output))
-        self.get_logger().info(f'{run.start} {run.bearing} -> {run.goals[0]}: {len(points)} path points. All goals: {run.goals}')
-        self.get_logger().info(f'Saved {output}. Coordinates calibrated: {course.calibrated}. No movement requested.')
+                      [(g, course.letters[g]) for g in run.goals], points, str(output),
+                      landmarks=course.letters)
+        report = format_path_report(course, run, points)
+        text_output = output.with_suffix('.txt')
+        text_output.write_text(report)
+        self.get_logger().info('\n' + report.split('Raw path points')[0])
+        self.get_logger().info(f'Saved {output} and {text_output}. No movement requested.')
 
 
 def main():

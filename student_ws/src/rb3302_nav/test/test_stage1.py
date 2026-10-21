@@ -8,7 +8,7 @@ import numpy as np
 from PIL import Image
 import yaml
 from rb3302_nav.course import Course, CourseMap, Run
-from rb3302_nav.render import render_stage1
+from rb3302_nav.render import render_stage1, path_directions, format_path_report
 
 
 class Stage1Test(unittest.TestCase):
@@ -102,6 +102,30 @@ class Stage1Test(unittest.TestCase):
         with Image.open(output) as image:
             self.assertGreater(image.width, 0)
             self.assertGreater(len(image.getcolors(image.width*image.height)), 3)
+
+    def test_direction_groups_skip_duplicates_and_preserve_turns(self):
+        path = np.array([[0.,0.],[.2,0.],[.2,0.],[.5,0.],[.5,.3],[.3,.1]])
+        groups = path_directions(path)
+        self.assertEqual([name for name, _ in groups], ['E', 'N', 'SW'])
+        np.testing.assert_allclose([length for _, length in groups], [.5,.3,math.sqrt(.08)])
+
+    def test_directions_use_course_orientation(self):
+        for index, name in enumerate(('E','NE','N','NW','W','SW','S','SE')):
+            angle = index*math.pi/4 + math.pi/3
+            path = np.array([[0.,0.],[math.cos(angle),math.sin(angle)]])
+            self.assertEqual(path_directions(path, math.pi/3)[0][0], name)
+        self.assertEqual(path_directions(np.array([[.3,.3]])), [])
+
+    def test_report_preserves_goals_and_actual_path_coordinates(self):
+        course = self.write_course()
+        run = Run.load(self.run_file())
+        path = np.array([[.3,.3],[.6,.3]])
+        report = format_path_report(course, run, path)
+        self.assertIn('Ordered goals: T, T, S, T', report)
+        self.assertIn('bearing NE', report)
+        self.assertIn('2 points, 0.300 m', report)
+        self.assertIn('Directions: E 0.30 m', report)
+        self.assertIn('0001: 0.600000, 0.300000', report)
 
 
 if __name__ == '__main__':
