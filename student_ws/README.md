@@ -1,5 +1,8 @@
 # RB3302 Final Project 
 
+Stage 1 input and first-path check: see [rb3302_nav](src/rb3302_nav/README.md).
+It uses Nav2 A* with an explicit starting pose and saves a path image. No AMCL or movement.
+
 This repository contains two ROS 2 workspaces for the RB3302 final project:
 
 - `robot_ws` contains the robot-side nodes used by the lab setup to activate the 2D Lidar, IMU, robot model, and transform definitions.

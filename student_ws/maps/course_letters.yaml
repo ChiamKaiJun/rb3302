@@ -1,0 +1,83 @@
+# Estimated centres from the user-confirmed letter_grid_preview.png overlay.
+# Image-edge bounds: left=8, right=78, top=10, bottom=56 pixels; 6 columns x 4 rows.
+# Physical measurements are still pending; calibrated remains false.
+# heading_offset_deg: course EAST relative to map +X (counter-clockwise).
+# robot_radius_m: provisional enclosing circle; measure before driving.
+map_yaml: rb3302_map.yaml
+frame_id: map
+calibrated: false
+heading_offset_deg: 0.0
+robot_radius_m: 0.22
+letters:
+  A:
+    x: -0.442333
+    y: 0.2625
+  B:
+    x: 0.141
+    y: 0.2625
+  C:
+    x: 0.724333
+    y: 0.2625
+  D:
+    x: 1.307667
+    y: 0.2625
+  E:
+    x: 1.891
+    y: 0.2625
+  F:
+    x: 2.474333
+    y: 0.2625
+  G:
+    x: -0.442333
+    y: -0.3125
+  H:
+    x: 0.141
+    y: -0.3125
+  I:
+    x: 0.724333
+    y: -0.3125
+  J:
+    x: 1.307667
+    y: -0.3125
+  K:
+    x: 1.891
+    y: -0.3125
+  L:
+    x: 2.474333
+    y: -0.3125
+  M:
+    x: -0.442333
+    y: -0.8875
+  N:
+    x: 0.141
+    y: -0.8875
+  O:
+    x: 0.724333
+    y: -0.8875
+  P:
+    x: 1.307667
+    y: -0.8875
+  Q:
+    x: 1.891
+    y: -0.8875
+  R:
+    x: 2.474333
+    y: -0.8875
+  S:
+    x: -0.442333
+    y: -1.4625
+  T:
+    x: 0.141
+    y: -1.4625
+  U:
+    x: 0.724333
+    y: -1.4625
+  V:
+    x: 1.307667
+    y: -1.4625
+  W:
+    x: 1.891
+    y: -1.4625
+  X:
+    x: 2.474333
+    y: -1.4625

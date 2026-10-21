@@ -1,0 +1,4 @@
+# Edit all inputs BEFORE launching. Repeats and ordering are preserved.
+start: S
+bearing: E
+goals: [T, N, H, A]
