@@ -7,8 +7,7 @@ setup(
         ('share/ament_index/resource_index/packages', ['resource/rb3302_nav']),
         ('share/rb3302_nav', ['package.xml', 'README.md']),
         ('share/rb3302_nav/config', glob('config/*')),
-        ('share/rb3302_nav/launch', glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools', 'numpy', 'Pillow', 'PyYAML'],
-    entry_points={'console_scripts': ['first_path = rb3302_nav.stage1_runner:main']},
+    entry_points={'console_scripts': ['path_preview = rb3302_nav.path_preview:main']},
 )

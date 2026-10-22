@@ -1,4 +1,8 @@
-"""Ask Nav2 for S0 -> S1 using an explicit start; save every returned path as a PNG."""
+"""Preview the programmed S0 -> S1 path using an already-running Nav2 stack.
+
+This does not initialise AMCL or command motion. The normal navigation stack
+needs robot TF/localisation even though the request supplies an explicit start.
+"""
 from pathlib import Path
 import math
 import time
@@ -15,9 +19,9 @@ from rb3302_nav.course import Course, Run
 from rb3302_nav.render import render_stage1, format_path_report
 
 
-class FirstPath(Node):
+class PathPreview(Node):
     def __init__(self):
-        super().__init__('first_path')
+        super().__init__('path_preview')
         for name, default in [('course_file', ''), ('run_file', ''),
                               ('output_file', 'first_path.png')]:
             self.declare_parameter(name, default)
@@ -57,7 +61,7 @@ class FirstPath(Node):
         deadline = time.monotonic()+30.0
         while rclpy.ok():
             if time.monotonic() > deadline:
-                raise TimeoutError('Planner did not activate; inspect map server and planning_start TF')
+                raise TimeoutError('Planner did not activate; check map server, AMCL initial pose and map -> odom -> base_link TF')
             state = self.wait(self.state_client.call_async(GetState.Request()), 2.0)
             if state.current_state.id == 3:
                 break
@@ -104,7 +108,7 @@ def main():
     rclpy.init()
     node = None
     try:
-        node = FirstPath()
+        node = PathPreview()
         node.plan()
     except (ValueError, KeyError, OSError, RuntimeError, TimeoutError) as error:
         raise SystemExit(str(error))

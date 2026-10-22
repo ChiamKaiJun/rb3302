@@ -1,8 +1,8 @@
 # RB3302 Final Project 
 
-Stage 1 input and first-path check: see [rb3302_nav](src/rb3302_nav/README.md).
-That planning check uses Nav2 A* with an explicit starting pose and saves a path image.
-For the separate standard Nav2 AMCL check, see the localisation section in the same guide.
+Programmed inputs and optional path-image debugging: see [rb3302_nav](src/rb3302_nav/README.md).
+Run the provided planning_astar launch for localisation and navigation. The optional
+path_preview client connects to that running stack; it does not start another stack.
 
 This repository contains two ROS 2 workspaces for the RB3302 final project:
 
@@ -57,7 +57,7 @@ rviz2
 ## Build
 
 ```bash
-cd ~/rb3302_final_proj_code/student_ws
+cd ~/rb3302_final_proj_code
 source /opt/ros/jazzy/setup.bash
 colcon build --symlink-install
 source install/setup.bash
