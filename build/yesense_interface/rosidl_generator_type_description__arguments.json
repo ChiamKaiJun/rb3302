@@ -1,0 +1,28 @@
+{
+  "package_name": "yesense_interface",
+  "output_dir": "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_generator_type_description/yesense_interface",
+  "idl_tuples": [
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/Tid.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/ThreeAxis.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/SensorTemp.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/Pressure.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/EulerAngle.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/Quat.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/GnssPos.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/NavStatus.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/Vel.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/Utc.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/SampleTimestamp.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/ImuData.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/ImuDataTenAxis.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/EulerOnly.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/RobotLord.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/AttitudeMinVru.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/AttitudeMinAhrs.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/AttitudeAllData.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/PosOnly.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/NavMin.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/NavMinUtc.idl",
+    "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_adapter/yesense_interface:msg/NavAll.idl"
+  ]
+}

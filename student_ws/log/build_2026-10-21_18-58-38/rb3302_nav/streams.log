@@ -1,0 +1,32 @@
+[2.193s] Invoking command in '/home/rb3302-5/rb3302/student_ws/build/rb3302_nav': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/student_ws/build/rb3302_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/student_ws/install/rb3302_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/build --no-deps symlink_data
+[2.681s] running develop
+[2.985s] running egg_info
+[2.985s] creating rb3302_nav.egg-info
+[3.016s] writing rb3302_nav.egg-info/PKG-INFO
+[3.016s] writing dependency_links to rb3302_nav.egg-info/dependency_links.txt
+[3.017s] writing entry points to rb3302_nav.egg-info/entry_points.txt
+[3.017s] writing requirements to rb3302_nav.egg-info/requires.txt
+[3.018s] writing top-level names to rb3302_nav.egg-info/top_level.txt
+[3.018s] writing manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+[3.077s] reading manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+[3.078s] writing manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+[3.111s] running build_ext
+[3.111s] Creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/lib/python3.12/site-packages/rb3302-nav.egg-link (link to .)
+[3.112s] Installing first_path script to /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/lib/rb3302_nav
+[3.113s] 
+[3.113s] Installed /home/rb3302-5/rb3302/student_ws/build/rb3302_nav
+[3.113s] running symlink_data
+[3.114s] creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/ament_index
+[3.114s] creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/ament_index/resource_index
+[3.114s] creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/ament_index/resource_index/packages
+[3.114s] symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/resource/rb3302_nav -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/ament_index/resource_index/packages
+[3.114s] symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/package.xml -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav
+[3.115s] symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/README.md -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav
+[3.115s] creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/config
+[3.115s] symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/config/run.yaml -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/config
+[3.115s] symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/config/localization.yaml -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/config
+[3.115s] symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/config/stage1.yaml -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/config
+[3.116s] creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/launch
+[3.116s] symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/launch/localization.launch.py -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/launch
+[3.116s] symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/launch/stage1.launch.py -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/launch
+[3.187s] Invoked command in '/home/rb3302-5/rb3302/student_ws/build/rb3302_nav' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/student_ws/build/rb3302_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/student_ws/install/rb3302_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/build --no-deps symlink_data

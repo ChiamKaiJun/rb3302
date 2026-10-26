@@ -1,0 +1,30 @@
+[3.198s] Invoking command in '/home/rb3302-5/rb3302/build/mapping_cartographer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/build/mapping_cartographer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/install/mapping_cartographer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/build/mapping_cartographer/build --no-deps symlink_data
+[3.721s] running develop
+[4.043s] running egg_info
+[4.043s] creating mapping_cartographer.egg-info
+[4.074s] writing mapping_cartographer.egg-info/PKG-INFO
+[4.074s] writing dependency_links to mapping_cartographer.egg-info/dependency_links.txt
+[4.074s] writing entry points to mapping_cartographer.egg-info/entry_points.txt
+[4.074s] writing requirements to mapping_cartographer.egg-info/requires.txt
+[4.075s] writing top-level names to mapping_cartographer.egg-info/top_level.txt
+[4.075s] writing manifest file 'mapping_cartographer.egg-info/SOURCES.txt'
+[4.140s] reading manifest file 'mapping_cartographer.egg-info/SOURCES.txt'
+[4.140s] writing manifest file 'mapping_cartographer.egg-info/SOURCES.txt'
+[4.173s] running build_ext
+[4.173s] Creating /home/rb3302-5/rb3302/install/mapping_cartographer/lib/python3.12/site-packages/mapping-cartographer.egg-link (link to .)
+[4.174s] Installing scan_time_normalizer script to /home/rb3302-5/rb3302/install/mapping_cartographer/lib/mapping_cartographer
+[4.174s] 
+[4.174s] Installed /home/rb3302-5/rb3302/build/mapping_cartographer
+[4.175s] running symlink_data
+[4.175s] creating /home/rb3302-5/rb3302/install/mapping_cartographer/share/ament_index
+[4.175s] creating /home/rb3302-5/rb3302/install/mapping_cartographer/share/ament_index/resource_index
+[4.175s] creating /home/rb3302-5/rb3302/install/mapping_cartographer/share/ament_index/resource_index/packages
+[4.175s] symbolically linking /home/rb3302-5/rb3302/build/mapping_cartographer/resource/mapping_cartographer -> /home/rb3302-5/rb3302/install/mapping_cartographer/share/ament_index/resource_index/packages
+[4.175s] symbolically linking /home/rb3302-5/rb3302/build/mapping_cartographer/package.xml -> /home/rb3302-5/rb3302/install/mapping_cartographer/share/mapping_cartographer
+[4.175s] creating /home/rb3302-5/rb3302/install/mapping_cartographer/share/mapping_cartographer/launch
+[4.176s] symbolically linking /home/rb3302-5/rb3302/build/mapping_cartographer/launch/mapping.launch.py -> /home/rb3302-5/rb3302/install/mapping_cartographer/share/mapping_cartographer/launch
+[4.176s] creating /home/rb3302-5/rb3302/install/mapping_cartographer/share/mapping_cartographer/config
+[4.176s] symbolically linking /home/rb3302-5/rb3302/build/mapping_cartographer/config/cartographer.lua -> /home/rb3302-5/rb3302/install/mapping_cartographer/share/mapping_cartographer/config
+[4.176s] creating /home/rb3302-5/rb3302/install/mapping_cartographer/share/mapping_cartographer/rviz
+[4.176s] symbolically linking /home/rb3302-5/rb3302/build/mapping_cartographer/rviz/mapping.rviz -> /home/rb3302-5/rb3302/install/mapping_cartographer/share/mapping_cartographer/rviz
+[4.248s] Invoked command in '/home/rb3302-5/rb3302/build/mapping_cartographer' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/build/mapping_cartographer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/install/mapping_cartographer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/build/mapping_cartographer/build --no-deps symlink_data

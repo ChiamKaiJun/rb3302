@@ -1,0 +1,30 @@
+[3.189s] Invoking command in '/home/rb3302-5/rb3302/build/rb3302_nav': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/build/rb3302_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/install/rb3302_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/build/rb3302_nav/build --no-deps symlink_data
+[3.713s] running develop
+[4.038s] running egg_info
+[4.038s] creating rb3302_nav.egg-info
+[4.069s] writing rb3302_nav.egg-info/PKG-INFO
+[4.070s] writing dependency_links to rb3302_nav.egg-info/dependency_links.txt
+[4.070s] writing entry points to rb3302_nav.egg-info/entry_points.txt
+[4.070s] writing requirements to rb3302_nav.egg-info/requires.txt
+[4.070s] writing top-level names to rb3302_nav.egg-info/top_level.txt
+[4.070s] writing manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+[4.134s] reading manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+[4.135s] writing manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+[4.173s] running build_ext
+[4.173s] Creating /home/rb3302-5/rb3302/install/rb3302_nav/lib/python3.12/site-packages/rb3302-nav.egg-link (link to .)
+[4.174s] Installing first_path script to /home/rb3302-5/rb3302/install/rb3302_nav/lib/rb3302_nav
+[4.175s] 
+[4.175s] Installed /home/rb3302-5/rb3302/build/rb3302_nav
+[4.175s] running symlink_data
+[4.175s] creating /home/rb3302-5/rb3302/install/rb3302_nav/share/ament_index
+[4.176s] creating /home/rb3302-5/rb3302/install/rb3302_nav/share/ament_index/resource_index
+[4.176s] creating /home/rb3302-5/rb3302/install/rb3302_nav/share/ament_index/resource_index/packages
+[4.176s] symbolically linking /home/rb3302-5/rb3302/build/rb3302_nav/resource/rb3302_nav -> /home/rb3302-5/rb3302/install/rb3302_nav/share/ament_index/resource_index/packages
+[4.176s] symbolically linking /home/rb3302-5/rb3302/build/rb3302_nav/package.xml -> /home/rb3302-5/rb3302/install/rb3302_nav/share/rb3302_nav
+[4.176s] symbolically linking /home/rb3302-5/rb3302/build/rb3302_nav/README.md -> /home/rb3302-5/rb3302/install/rb3302_nav/share/rb3302_nav
+[4.177s] creating /home/rb3302-5/rb3302/install/rb3302_nav/share/rb3302_nav/config
+[4.177s] symbolically linking /home/rb3302-5/rb3302/build/rb3302_nav/config/run.yaml -> /home/rb3302-5/rb3302/install/rb3302_nav/share/rb3302_nav/config
+[4.177s] symbolically linking /home/rb3302-5/rb3302/build/rb3302_nav/config/stage1.yaml -> /home/rb3302-5/rb3302/install/rb3302_nav/share/rb3302_nav/config
+[4.177s] creating /home/rb3302-5/rb3302/install/rb3302_nav/share/rb3302_nav/launch
+[4.177s] symbolically linking /home/rb3302-5/rb3302/build/rb3302_nav/launch/stage1.launch.py -> /home/rb3302-5/rb3302/install/rb3302_nav/share/rb3302_nav/launch
+[4.248s] Invoked command in '/home/rb3302-5/rb3302/build/rb3302_nav' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/build/rb3302_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/install/rb3302_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/build/rb3302_nav/build --no-deps symlink_data

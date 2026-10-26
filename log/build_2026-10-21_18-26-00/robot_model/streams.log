@@ -1,0 +1,44 @@
+[0.053s] Invoking command in '/home/rb3302-5/rb3302/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/robot_model -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/install/robot_model
+[0.786s] -- The C compiler identification is GNU 13.3.0
+[0.787s] -- The CXX compiler identification is GNU 13.3.0
+[0.787s] -- Detecting C compiler ABI info
+[0.787s] -- Detecting C compiler ABI info - done
+[0.787s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.787s] -- Detecting C compile features
+[0.787s] -- Detecting C compile features - done
+[0.787s] -- Detecting CXX compiler ABI info
+[0.788s] -- Detecting CXX compiler ABI info - done
+[0.788s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.788s] -- Detecting CXX compile features
+[0.788s] -- Detecting CXX compile features - done
+[0.788s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.965s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.099s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.362s] -- Configuring done (1.3s)
+[1.365s] -- Generating done (0.0s)
+[1.369s] -- Build files have been written to: /home/rb3302-5/rb3302/build/robot_model
+[1.381s] Invoked command in '/home/rb3302-5/rb3302/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/robot_model -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/install/robot_model
+[1.383s] Invoking command in '/home/rb3302-5/rb3302/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/build/robot_model -- -j8 -l8
+[1.446s] Invoked command in '/home/rb3302-5/rb3302/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/build/robot_model -- -j8 -l8
+[1.463s] Invoking command in '/home/rb3302-5/rb3302/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/build/robot_model
+[1.477s] -- Install configuration: ""
+[1.478s] -- Execute custom install script
+[1.478s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/urdf/diffbot.urdf.xacro
+[1.493s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/launch/description.launch.py
+[1.509s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/rviz/description.rviz
+[1.523s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/ament_index/resource_index/package_run_dependencies/robot_model
+[1.537s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/ament_index/resource_index/parent_prefix_path/robot_model
+[1.551s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/environment/ament_prefix_path.sh
+[1.566s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/environment/ament_prefix_path.dsv
+[1.580s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/environment/path.sh
+[1.599s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/environment/path.dsv
+[1.618s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/local_setup.bash
+[1.650s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/local_setup.sh
+[1.677s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/local_setup.zsh
+[1.694s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/local_setup.dsv
+[1.716s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/package.dsv
+[1.731s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/ament_index/resource_index/packages/robot_model
+[1.744s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/cmake/robot_modelConfig.cmake
+[1.760s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/cmake/robot_modelConfig-version.cmake
+[1.774s] -- Symlinking: /home/rb3302-5/rb3302/install/robot_model/share/robot_model/package.xml
+[1.797s] Invoked command in '/home/rb3302-5/rb3302/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/build/robot_model

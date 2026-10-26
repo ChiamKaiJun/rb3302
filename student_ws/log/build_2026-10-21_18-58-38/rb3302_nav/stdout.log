@@ -1,0 +1,30 @@
+running develop
+running egg_info
+creating rb3302_nav.egg-info
+writing rb3302_nav.egg-info/PKG-INFO
+writing dependency_links to rb3302_nav.egg-info/dependency_links.txt
+writing entry points to rb3302_nav.egg-info/entry_points.txt
+writing requirements to rb3302_nav.egg-info/requires.txt
+writing top-level names to rb3302_nav.egg-info/top_level.txt
+writing manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+reading manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+writing manifest file 'rb3302_nav.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/lib/python3.12/site-packages/rb3302-nav.egg-link (link to .)
+Installing first_path script to /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/lib/rb3302_nav
+
+Installed /home/rb3302-5/rb3302/student_ws/build/rb3302_nav
+running symlink_data
+creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/ament_index
+creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/ament_index/resource_index
+creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/ament_index/resource_index/packages
+symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/resource/rb3302_nav -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/ament_index/resource_index/packages
+symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/package.xml -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav
+symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/README.md -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav
+creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/config
+symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/config/run.yaml -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/config
+symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/config/localization.yaml -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/config
+symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/config/stage1.yaml -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/config
+creating /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/launch
+symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/launch/localization.launch.py -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/launch
+symbolically linking /home/rb3302-5/rb3302/student_ws/build/rb3302_nav/launch/stage1.launch.py -> /home/rb3302-5/rb3302/student_ws/install/rb3302_nav/share/rb3302_nav/launch

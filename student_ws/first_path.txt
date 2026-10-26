@@ -1,0 +1,31 @@
+Nav2 A* first path: S -> T
+Start: S, bearing E, map pose (-0.442, -1.462, 0.0 deg)
+Ordered goals: T, N, H, A (only goal 1 planned)
+Goal 1 map position: (0.141, -1.4625)
+Map: /home/rb3302-5/rb3302/student_ws/maps/rb3302_map.yaml
+Letter coordinates calibrated: False; robot radius: 0.220 m
+Path: 21 points, 0.605 m
+Directions: E 0.51 m -> NE 0.07 m -> SE 0.03 m
+Directions are rounded to 8 course-compass headings, not movement instructions.
+Raw path points (index, map x metres, map y metres):
+0000: -0.434000, -1.450000
+0001: -0.403204, -1.455850
+0002: -0.378463, -1.459441
+0003: -0.353810, -1.463589
+0004: -0.329234, -1.459004
+0005: -0.304592, -1.454788
+0006: -0.280249, -1.460482
+0007: -0.255912, -1.466203
+0008: -0.231544, -1.471789
+0009: -0.207147, -1.477245
+0010: -0.182690, -1.482426
+0011: -0.158160, -1.487253
+0012: -0.133529, -1.491530
+0013: -0.108792, -1.495152
+0014: -0.083939, -1.497853
+0015: -0.058996, -1.499539
+0016: -0.034000, -1.500000
+0017: 0.016000, -1.500000
+0018: 0.066000, -1.500000
+0019: 0.116000, -1.450000
+0020: 0.141000, -1.462500

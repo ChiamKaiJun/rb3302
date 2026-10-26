@@ -11,6 +11,8 @@ amcl:
     alpha3: 0.8
     alpha4: 0.8
     alpha5: 0.8
+    update_min_d: 0.05 ## added 26 oct, tried & tested, keep 0.05 
+    update_min_a: 0.05 ## added 26 oct, tried & tested, keep 0.05 
 
 bt_navigator:
   ros__parameters:
@@ -35,6 +37,9 @@ controller_server:
       plugin: nav2_controller::SimpleProgressChecker
     goal_checker:
       plugin: nav2_controller::SimpleGoalChecker
+      xy_goal_tolerance: 0.10 ## 26 oct
+      yaw_goal_tolerance: 0.25 ## 26 oct
+      stateful: True ## 26 oct
     FollowPath:
       plugin: nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
       desired_linear_vel: 0.3
@@ -68,7 +73,8 @@ local_costmap:
       width: 3
       height: 3
       resolution: 0.05
-      footprint: "[[-0.025, -0.025], [0.025, -0.025], [0.025, 0.025], [-0.025, 0.025]]"
+      footprint: "[[-0.10, -0.10], [0.10, -0.10], [0.10, 0.10], [-0.10, 0.10]]" ## 26 oct, all values changed in magnitude from 0.025 50 0.10
+      footprint_padding: 0.01 ## 26 oct
       plugins: ["obstacle_layer", "inflation_layer"]
       obstacle_layer:
         plugin: nav2_costmap_2d::ObstacleLayer
@@ -82,14 +88,15 @@ local_costmap:
         plugin: nav2_costmap_2d::InflationLayer
       always_send_full_costmap: true
 
-global_costmap:
+global_costmap:  ## for astar 
   global_costmap:
     ros__parameters:
       use_sim_time: false
       global_frame: map
       robot_base_frame: base_link
       resolution: 0.05
-      footprint: "[[-0.025, -0.025], [0.025, -0.025], [0.025, 0.025], [-0.025, 0.025]]"
+      footprint: "[[-0.10, -0.10], [0.10, -0.10], [0.10, 0.10], [-0.10, 0.10]]" ## 26 oct, all values changed in magnitude from 0.025 50 0.10
+      footprint_padding: 0.01 ## 26 oct
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
       static_layer:
@@ -167,3 +174,5 @@ waypoint_follower:
     waypoint_task_executor_plugin: wait_at_waypoint
     wait_at_waypoint:
       plugin: nav2_waypoint_follower::WaitAtWaypoint
+      enabled: True ## 26 oct
+      waypoint_pause_duration: 3500 ## 26 oct

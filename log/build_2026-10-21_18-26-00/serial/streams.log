@@ -1,0 +1,70 @@
+[0.061s] Invoking command in '/home/rb3302-5/rb3302/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/install/serial
+[0.796s] -- The C compiler identification is GNU 13.3.0
+[0.797s] -- The CXX compiler identification is GNU 13.3.0
+[0.798s] -- Detecting C compiler ABI info
+[0.798s] -- Detecting C compiler ABI info - done
+[0.798s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.798s] -- Detecting C compile features
+[0.799s] -- Detecting C compile features - done
+[0.799s] -- Detecting CXX compiler ABI info
+[0.799s] -- Detecting CXX compiler ABI info - done
+[0.799s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.799s] -- Detecting CXX compile features
+[0.799s] -- Detecting CXX compile features - done
+[0.799s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.980s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.115s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.132s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.343s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.464s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.691s] -- Configuring done (1.6s)
+[1.703s] -- Generating done (0.0s)
+[1.708s] -- Build files have been written to: /home/rb3302-5/rb3302/build/serial
+[1.732s] Invoked command in '/home/rb3302-5/rb3302/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/install/serial
+[1.733s] Invoking command in '/home/rb3302-5/rb3302/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/build/serial -- -j8 -l8
+[1.814s] [ 25%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[1.818s] [ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[1.824s] [ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[2.399s] [01m[K/home/rb3302-5/rb3302/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >[01;32m[K glob[m[K(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[2.399s] [01m[K/home/rb3302-5/rb3302/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:66:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.400s]    66 |     for(int path_index = 0; [01;35m[Kpath_index < glob_results.gl_pathc[m[K; path_index++)
+[2.400s]       |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.400s] [01m[K/home/rb3302-5/rb3302/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:57:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kglob_retval[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[2.400s]    57 |     int [01;35m[Kglob_retval[m[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);
+[2.400s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[2.413s] [01m[K/home/rb3302-5/rb3302/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::string[01;32m[K format[m[K(const char*, ...)[m[K’:
+[2.413s] [01m[K/home/rb3302-5/rb3302/robot_ws/src/serial/src/impl/list_ports/list_ports_linux.cc:246:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.413s]   246 |         else if( [01;35m[Kreturn_value >= buffer_size_bytes[m[K )
+[2.413s]       |                  [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[2.824s] [100%] [32m[1mLinking CXX static library libserial.a[0m
+[2.876s] [100%] Built target serial
+[2.891s] Invoked command in '/home/rb3302-5/rb3302/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/build/serial -- -j8 -l8
+[2.892s] Invoking command in '/home/rb3302-5/rb3302/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/build/serial
+[2.903s] -- Install configuration: ""
+[2.903s] -- Execute custom install script
+[2.904s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/lib/libserial.a
+[2.917s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/environment/library_path.sh
+[2.929s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/environment/library_path.dsv
+[2.943s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/include/serial/impl/unix.h
+[2.955s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/include/serial/impl/win.h
+[2.967s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/include/serial/serial.h
+[2.980s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/include/serial/v8stdint.h
+[2.992s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[3.005s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[3.019s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/environment/ament_prefix_path.sh
+[3.032s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/environment/ament_prefix_path.dsv
+[3.045s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/environment/path.sh
+[3.057s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/environment/path.dsv
+[3.070s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/local_setup.bash
+[3.082s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/local_setup.sh
+[3.094s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/local_setup.zsh
+[3.106s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/local_setup.dsv
+[3.119s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/package.dsv
+[3.132s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/ament_index/resource_index/packages/serial
+[3.144s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.157s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[3.171s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.185s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/cmake/serialConfig.cmake
+[3.200s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/cmake/serialConfig-version.cmake
+[3.218s] -- Symlinking: /home/rb3302-5/rb3302/install/serial/share/serial/package.xml
+[3.241s] Invoked command in '/home/rb3302-5/rb3302/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/build/serial

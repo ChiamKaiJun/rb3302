@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rb3302-5/rb3302/student_ws/install/planning_astar/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rb3302-5/rb3302/student_ws/install/planning_astar/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rb3302-5/rb3302/student_ws/install/planning_astar/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/ubuntu/rb3302_final_proj_code/student_ws/install/planning_astar/${destination}")
+      set(destination "/home/rb3302-5/rb3302/student_ws/install/planning_astar/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,46 +316,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch" "config" "rviz" "DESTINATION" "share/planning_astar")
-ament_cmake_symlink_install_directory("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" DIRECTORY "launch" "config" "rviz" "DESTINATION" "share/planning_astar")
+ament_cmake_symlink_install_directory("/home/rb3302-5/rb3302/student_ws/src/planning_astar" DIRECTORY "launch" "config" "rviz" "DESTINATION" "share/planning_astar")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/planning_astar" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/planning_astar" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/planning_astar" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/planning_astar" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/planning_astar" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/planning_astar" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/planning_astar" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/planning_astar" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/planning_astar/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/planning_astar/environment")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/planning_astar/environment")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/planning_astar/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/planning_astar/environment")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/planning_astar/environment")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/planning_astar/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/planning_astar/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/planning_astar/environment")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/planning_astar/environment")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/planning_astar/environment")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/planning_astar/environment")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/planning_astar/environment")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/planning_astar/environment")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/planning_astar")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/planning_astar")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/planning_astar")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/planning_astar")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/planning_astar")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/planning_astar")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/planning_astar")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/planning_astar")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/planning_astar")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/planning_astar")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/planning_astar")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/planning_astar")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/planning_astar")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/planning_astar")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/planning_astar")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/planning_astar")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/planning_astar")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/planning_astar")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/planning_astar")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/planning_astar")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/packages/planning_astar" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/packages/planning_astar" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/packages/planning_astar" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_index/share/ament_index/resource_index/packages/planning_astar" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_core/planning_astarConfig.cmake" "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_core/planning_astarConfig-version.cmake" "DESTINATION" "share/planning_astar/cmake")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_core/planning_astarConfig.cmake" "/home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/ament_cmake_core/planning_astarConfig-version.cmake" "DESTINATION" "share/planning_astar/cmake")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_core/planning_astarConfig.cmake" "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_core/planning_astarConfig-version.cmake" "DESTINATION" "share/planning_astar/cmake")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_core/planning_astarConfig.cmake" "/home/rb3302-5/rb3302/student_ws/build/planning_astar/ament_cmake_core/planning_astarConfig-version.cmake" "DESTINATION" "share/planning_astar/cmake")
 
-# install(FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar/package.xml" "DESTINATION" "share/planning_astar")
-ament_cmake_symlink_install_files("/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar" FILES "/home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar/package.xml" "DESTINATION" "share/planning_astar")
+# install(FILES "/home/rb3302-5/rb3302/student_ws/src/planning_astar/package.xml" "DESTINATION" "share/planning_astar")
+ament_cmake_symlink_install_files("/home/rb3302-5/rb3302/student_ws/src/planning_astar" FILES "/home/rb3302-5/rb3302/student_ws/src/planning_astar/package.xml" "DESTINATION" "share/planning_astar")

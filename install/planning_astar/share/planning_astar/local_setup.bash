@@ -1,0 +1,1 @@
+/home/rb3302-5/rb3302/build/planning_astar/ament_cmake_environment_hooks/local_setup.bash

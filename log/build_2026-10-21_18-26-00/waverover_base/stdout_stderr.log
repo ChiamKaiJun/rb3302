@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating waverover_base.egg-info
+writing waverover_base.egg-info/PKG-INFO
+writing dependency_links to waverover_base.egg-info/dependency_links.txt
+writing entry points to waverover_base.egg-info/entry_points.txt
+writing requirements to waverover_base.egg-info/requires.txt
+writing top-level names to waverover_base.egg-info/top_level.txt
+writing manifest file 'waverover_base.egg-info/SOURCES.txt'
+reading manifest file 'waverover_base.egg-info/SOURCES.txt'
+writing manifest file 'waverover_base.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rb3302-5/rb3302/install/waverover_base/lib/python3.12/site-packages/waverover-base.egg-link (link to .)
+Installing keyboard_teleop script to /home/rb3302-5/rb3302/install/waverover_base/lib/waverover_base
+Installing waverover_driver script to /home/rb3302-5/rb3302/install/waverover_base/lib/waverover_base
+
+Installed /home/rb3302-5/rb3302/build/waverover_base
+running symlink_data
+creating /home/rb3302-5/rb3302/install/waverover_base/share/ament_index
+creating /home/rb3302-5/rb3302/install/waverover_base/share/ament_index/resource_index
+creating /home/rb3302-5/rb3302/install/waverover_base/share/ament_index/resource_index/packages
+symbolically linking /home/rb3302-5/rb3302/build/waverover_base/resource/waverover_base -> /home/rb3302-5/rb3302/install/waverover_base/share/ament_index/resource_index/packages
+symbolically linking /home/rb3302-5/rb3302/build/waverover_base/package.xml -> /home/rb3302-5/rb3302/install/waverover_base/share/waverover_base
+creating /home/rb3302-5/rb3302/install/waverover_base/share/waverover_base/launch
+symbolically linking /home/rb3302-5/rb3302/build/waverover_base/launch/driver.launch.py -> /home/rb3302-5/rb3302/install/waverover_base/share/waverover_base/launch

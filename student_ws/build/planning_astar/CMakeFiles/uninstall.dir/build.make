@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar
+CMAKE_SOURCE_DIR = /home/rb3302-5/rb3302/student_ws/src/planning_astar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar
+CMAKE_BINARY_DIR = /home/rb3302-5/rb3302/student_ws/build/planning_astar
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar /home/ubuntu/rb3302_final_proj_code/student_ws/src/planning_astar /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar /home/ubuntu/rb3302_final_proj_code/student_ws/build/planning_astar/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rb3302-5/rb3302/student_ws/build/planning_astar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rb3302-5/rb3302/student_ws/src/planning_astar /home/rb3302-5/rb3302/student_ws/src/planning_astar /home/rb3302-5/rb3302/student_ws/build/planning_astar /home/rb3302-5/rb3302/student_ws/build/planning_astar /home/rb3302-5/rb3302/student_ws/build/planning_astar/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

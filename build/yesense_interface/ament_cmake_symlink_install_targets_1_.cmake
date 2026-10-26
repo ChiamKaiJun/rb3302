@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rb3302-5/rb3302/build/yesense_interface/rosidl_generator_py/yesense_interface/yesense_interface_s__rosidl_typesupport_introspection_c.so" "TARGETS" "yesense_interface_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/yesense_interface")

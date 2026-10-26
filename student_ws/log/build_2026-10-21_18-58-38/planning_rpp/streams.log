@@ -1,0 +1,45 @@
+[0.348s] Invoking command in '/home/rb3302-5/rb3302/student_ws/build/planning_rpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/rb3302_nav:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/student_ws/src/planning_rpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/student_ws/install/planning_rpp
+[0.443s] -- The C compiler identification is GNU 13.3.0
+[0.520s] -- The CXX compiler identification is GNU 13.3.0
+[0.542s] -- Detecting C compiler ABI info
+[0.658s] -- Detecting C compiler ABI info - done
+[0.673s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.674s] -- Detecting C compile features
+[0.674s] -- Detecting C compile features - done
+[0.688s] -- Detecting CXX compiler ABI info
+[0.830s] -- Detecting CXX compiler ABI info - done
+[0.846s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.846s] -- Detecting CXX compile features
+[0.847s] -- Detecting CXX compile features - done
+[0.853s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.084s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.202s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.415s] -- Configuring done (1.1s)
+[1.419s] -- Generating done (0.0s)
+[1.421s] -- Build files have been written to: /home/rb3302-5/rb3302/student_ws/build/planning_rpp
+[1.429s] Invoked command in '/home/rb3302-5/rb3302/student_ws/build/planning_rpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/rb3302_nav:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/student_ws/src/planning_rpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/student_ws/install/planning_rpp
+[1.430s] Invoking command in '/home/rb3302-5/rb3302/student_ws/build/planning_rpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/rb3302_nav:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/student_ws/build/planning_rpp -- -j8 -l8
+[1.494s] Invoked command in '/home/rb3302-5/rb3302/student_ws/build/planning_rpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/rb3302_nav:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/student_ws/build/planning_rpp -- -j8 -l8
+[1.495s] Invoking command in '/home/rb3302-5/rb3302/student_ws/build/planning_rpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/rb3302_nav:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/student_ws/build/planning_rpp
+[1.506s] -- Install configuration: ""
+[1.507s] -- Execute custom install script
+[1.508s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/launch/__pycache__/planning.launch.cpython-312.pyc
+[1.519s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/launch/planning.launch.py
+[1.531s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/config/nav2_params.yaml
+[1.544s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/rviz/navigation.rviz
+[1.557s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/ament_index/resource_index/package_run_dependencies/planning_rpp
+[1.572s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/ament_index/resource_index/parent_prefix_path/planning_rpp
+[1.586s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/environment/ament_prefix_path.sh
+[1.600s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/environment/ament_prefix_path.dsv
+[1.620s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/environment/path.sh
+[1.635s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/environment/path.dsv
+[1.650s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/local_setup.bash
+[1.667s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/local_setup.sh
+[1.682s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/local_setup.zsh
+[1.695s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/local_setup.dsv
+[1.707s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/package.dsv
+[1.720s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/ament_index/resource_index/packages/planning_rpp
+[1.732s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/cmake/planning_rppConfig.cmake
+[1.745s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/cmake/planning_rppConfig-version.cmake
+[1.757s] -- Symlinking: /home/rb3302-5/rb3302/student_ws/install/planning_rpp/share/planning_rpp/package.xml
+[1.792s] Invoked command in '/home/rb3302-5/rb3302/student_ws/build/planning_rpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rb3302-5/rb3302/student_ws/install/rb3302_nav:/home/rb3302-5/rb3302/student_ws/install/mapping_cartographer:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/student_ws/build/planning_rpp

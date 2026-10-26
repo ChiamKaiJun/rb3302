@@ -11,6 +11,8 @@ amcl:
     alpha3: 0.8
     alpha4: 0.8
     alpha5: 0.8
+    update_min_d: 0.05 ## added 26 oct
+    update_min_a: 0.05 ## added 26 oct
 
 bt_navigator:
   ros__parameters:

@@ -104,7 +104,7 @@ def generate_launch_description():
                 'odom0_config': [
                     False, False, False,
                     False, False, False,
-                    True, False, False,
+                    False, False, False, ## 26 oct, tried and tested, change 1st to False
                     False, False, False,
                     False, False, False,
                 ],

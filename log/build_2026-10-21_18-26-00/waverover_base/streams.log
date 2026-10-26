@@ -1,0 +1,27 @@
+[3.219s] Invoking command in '/home/rb3302-5/rb3302/build/waverover_base': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/build/waverover_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/build/waverover_base/build --no-deps symlink_data
+[3.748s] running develop
+[4.079s] running egg_info
+[4.079s] creating waverover_base.egg-info
+[4.112s] writing waverover_base.egg-info/PKG-INFO
+[4.113s] writing dependency_links to waverover_base.egg-info/dependency_links.txt
+[4.113s] writing entry points to waverover_base.egg-info/entry_points.txt
+[4.113s] writing requirements to waverover_base.egg-info/requires.txt
+[4.113s] writing top-level names to waverover_base.egg-info/top_level.txt
+[4.113s] writing manifest file 'waverover_base.egg-info/SOURCES.txt'
+[4.179s] reading manifest file 'waverover_base.egg-info/SOURCES.txt'
+[4.179s] writing manifest file 'waverover_base.egg-info/SOURCES.txt'
+[4.218s] running build_ext
+[4.218s] Creating /home/rb3302-5/rb3302/install/waverover_base/lib/python3.12/site-packages/waverover-base.egg-link (link to .)
+[4.219s] Installing keyboard_teleop script to /home/rb3302-5/rb3302/install/waverover_base/lib/waverover_base
+[4.220s] Installing waverover_driver script to /home/rb3302-5/rb3302/install/waverover_base/lib/waverover_base
+[4.220s] 
+[4.221s] Installed /home/rb3302-5/rb3302/build/waverover_base
+[4.221s] running symlink_data
+[4.221s] creating /home/rb3302-5/rb3302/install/waverover_base/share/ament_index
+[4.221s] creating /home/rb3302-5/rb3302/install/waverover_base/share/ament_index/resource_index
+[4.221s] creating /home/rb3302-5/rb3302/install/waverover_base/share/ament_index/resource_index/packages
+[4.221s] symbolically linking /home/rb3302-5/rb3302/build/waverover_base/resource/waverover_base -> /home/rb3302-5/rb3302/install/waverover_base/share/ament_index/resource_index/packages
+[4.222s] symbolically linking /home/rb3302-5/rb3302/build/waverover_base/package.xml -> /home/rb3302-5/rb3302/install/waverover_base/share/waverover_base
+[4.222s] creating /home/rb3302-5/rb3302/install/waverover_base/share/waverover_base/launch
+[4.222s] symbolically linking /home/rb3302-5/rb3302/build/waverover_base/launch/driver.launch.py -> /home/rb3302-5/rb3302/install/waverover_base/share/waverover_base/launch
+[4.287s] Invoked command in '/home/rb3302-5/rb3302/build/waverover_base' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/build/waverover_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/build/waverover_base/build --no-deps symlink_data
