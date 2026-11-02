@@ -1,0 +1,488 @@
+[0.157s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.157s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7439f0fa91c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7439f10c1af0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7439f10c1af0>>, mixin_verb=('build',))
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.213s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rb3302-5/rb3302/robot_ws'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_init) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_init' with type 'ros.ament_cmake' and name 'robot_init'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_model) by extension 'ros'
+[0.259s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_model' with type 'ros.ament_cmake' and name 'robot_model'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/waverover_base) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/waverover_base' with type 'ros.ament_python' and name 'waverover_base'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_interface) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yesense_interface' with type 'ros.ament_cmake' and name 'yesense_interface'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yesense_std_ros2) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yesense_std_ros2' with type 'ros.ament_cmake' and name 'yesense_std_ros2'
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.298s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 383 installed packages in /opt/ros/jazzy
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'cmake_target' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'cmake_clean_cache' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'cmake_clean_first' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'cmake_force_configure' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'ament_cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'catkin_cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'robot_model' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.380s] DEBUG:colcon.colcon_core.verb:Building package 'robot_model' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rb3302-5/rb3302/robot_ws/build/robot_model', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rb3302-5/rb3302/robot_ws/install/robot_model', 'merge_install': False, 'path': '/home/rb3302-5/rb3302/robot_ws/src/robot_model', 'symlink_install': True, 'test_result_base': None}
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.381s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rb3302-5/rb3302/robot_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rb3302-5/rb3302/robot_ws/install/serial', 'merge_install': False, 'path': '/home/rb3302-5/rb3302/robot_ws/src/serial', 'symlink_install': True, 'test_result_base': None}
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'cmake_target' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'cmake_clean_cache' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'cmake_clean_first' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'cmake_force_configure' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'ament_cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'catkin_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'waverover_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.382s] DEBUG:colcon.colcon_core.verb:Building package 'waverover_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rb3302-5/rb3302/robot_ws/build/waverover_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rb3302-5/rb3302/robot_ws/install/waverover_base', 'merge_install': False, 'path': '/home/rb3302-5/rb3302/robot_ws/src/waverover_base', 'symlink_install': True, 'test_result_base': None}
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'cmake_target' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'yesense_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.382s] DEBUG:colcon.colcon_core.verb:Building package 'yesense_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rb3302-5/rb3302/robot_ws/build/yesense_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface', 'merge_install': False, 'path': '/home/rb3302-5/rb3302/robot_ws/src/yesense_interface', 'symlink_install': True, 'test_result_base': None}
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'cmake_args' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'cmake_target' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'yesense_std_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.383s] DEBUG:colcon.colcon_core.verb:Building package 'yesense_std_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2', 'merge_install': False, 'path': '/home/rb3302-5/rb3302/robot_ws/src/yesense_std_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'cmake_args' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'cmake_target' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'cmake_clean_cache' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'cmake_clean_first' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'cmake_force_configure' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'ament_cmake_args' from command line to 'None'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'catkin_cmake_args' from command line to 'None'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'robot_init' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.384s] DEBUG:colcon.colcon_core.verb:Building package 'robot_init' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rb3302-5/rb3302/robot_ws/build/robot_init', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rb3302-5/rb3302/robot_ws/install/robot_init', 'merge_install': False, 'path': '/home/rb3302-5/rb3302/robot_ws/src/robot_init', 'symlink_install': True, 'test_result_base': None}
+[0.384s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.385s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.386s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rb3302-5/rb3302/robot_ws/src/serial' with build type 'ament_cmake'
+[0.386s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rb3302-5/rb3302/robot_ws/src/serial'
+[0.389s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.389s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.389s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.394s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rb3302-5/rb3302/robot_ws/src/yesense_interface' with build type 'ament_cmake'
+[0.394s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rb3302-5/rb3302/robot_ws/src/yesense_interface'
+[0.394s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.394s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.399s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rb3302-5/rb3302/robot_ws/src/robot_model' with build type 'ament_cmake'
+[0.400s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rb3302-5/rb3302/robot_ws/src/robot_model'
+[0.400s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.400s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.405s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rb3302-5/rb3302/robot_ws/src/waverover_base' with build type 'ament_python'
+[0.405s] Level 1:colcon.colcon_core.shell:create_environment_hook('waverover_base', 'ament_prefix_path')
+[0.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/hook/ament_prefix_path.ps1'
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/hook/ament_prefix_path.dsv'
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/hook/ament_prefix_path.sh'
+[0.408s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.408s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/serial
+[0.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/yesense_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface
+[0.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/robot_model -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/robot_model
+[0.821s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rb3302-5/rb3302/robot_ws/src/waverover_base'
+[0.822s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.822s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/robot_model -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/robot_model
+[1.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/robot_model -- -j8 -l8
+[1.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/robot_model -- -j8 -l8
+[1.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/robot_model
+[1.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/serial
+[1.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/serial -- -j8 -l8
+[1.873s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_model)
+[1.874s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/robot_model
+[1.878s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model' for CMake module files
+[1.879s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model' for CMake config files
+[1.879s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_model', 'cmake_prefix_path')
+[1.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/hook/cmake_prefix_path.ps1'
+[1.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/hook/cmake_prefix_path.dsv'
+[1.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/hook/cmake_prefix_path.sh'
+[1.882s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model/bin'
+[1.882s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model/lib/pkgconfig/robot_model.pc'
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model/lib/python3.12/site-packages'
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model/bin'
+[1.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.ps1'
+[1.885s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.dsv'
+[1.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.sh'
+[1.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.bash'
+[1.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.zsh'
+[1.890s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/colcon-core/packages/robot_model)
+[1.891s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_model)
+[1.892s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model' for CMake module files
+[1.892s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model' for CMake config files
+[1.893s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_model', 'cmake_prefix_path')
+[1.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/hook/cmake_prefix_path.ps1'
+[1.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/hook/cmake_prefix_path.dsv'
+[1.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/hook/cmake_prefix_path.sh'
+[1.896s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model/bin'
+[1.896s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model/lib/pkgconfig/robot_model.pc'
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model/lib/python3.12/site-packages'
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_model/bin'
+[1.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.ps1'
+[1.899s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.dsv'
+[1.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.sh'
+[1.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.bash'
+[1.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/robot_model/package.zsh'
+[1.902s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/robot_model/share/colcon-core/packages/robot_model)
+[1.905s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: saveopts, build_py, bdist, alias, editable_wheel, rotate, bdist_rpm, bdist_dumb, build_clib, test, easy_install, init_catalog, install_lib, install_headers, extract_messages, egg_info, check, update_catalog, build_ext, compile_catalog, upload_docs, sdist, install_egg_info, upload, install, bdist_egg, clean, dist_info, symlink_data, install_scripts, build, register, develop, build_scripts, install_data, setopt
+[2.494s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --script-dir, --build-directory, --quiet, --dry-run, --force-installation-into-system-dir, --editable, --optimize, --no-deps, --install-layout, --uninstall, --user, --multi-version, --always-copy, --record, --version, --no-find-links, --help, --verbose, --zip-ok, --no-user-cfg, --upgrade, --index-url, --egg-path, --allow-hosts, --always-unzip, --find-links, --site-dirs, --exclude-scripts, --local-snapshots-ok, --prefix, --install-dir
+[2.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/waverover_base': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/build/waverover_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/robot_ws/build/waverover_base/build --no-deps symlink_data
+[2.699s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/serial -- -j8 -l8
+[2.700s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/serial
+[3.030s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[3.030s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial' for CMake module files
+[3.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/serial
+[3.032s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial' for CMake config files
+[3.033s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[3.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[3.034s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[3.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[3.035s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/lib'
+[3.035s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/bin'
+[3.036s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/lib/pkgconfig/serial.pc'
+[3.036s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/lib/python3.12/site-packages'
+[3.036s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/bin'
+[3.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.ps1'
+[3.037s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.dsv'
+[3.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.sh'
+[3.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.bash'
+[3.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.zsh'
+[3.039s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/serial/share/colcon-core/packages/serial)
+[3.040s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[3.040s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial' for CMake module files
+[3.041s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial' for CMake config files
+[3.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[3.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[3.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[3.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[3.043s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/lib'
+[3.043s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/bin'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/lib/pkgconfig/serial.pc'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/lib/python3.12/site-packages'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/serial/bin'
+[3.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.ps1'
+[3.046s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.dsv'
+[3.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.sh'
+[3.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.bash'
+[3.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/serial/share/serial/package.zsh'
+[3.048s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/serial/share/colcon-core/packages/serial)
+[3.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('waverover_base', 'pythonpath_develop')
+[3.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/build/waverover_base/share/waverover_base/hook/pythonpath_develop.ps1'
+[3.556s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/waverover_base' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/build/waverover_base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rb3302-5/rb3302/robot_ws/build/waverover_base/build --no-deps symlink_data
+[3.556s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/build/waverover_base/share/waverover_base/hook/pythonpath_develop.dsv'
+[3.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/build/waverover_base/share/waverover_base/hook/pythonpath_develop.sh'
+[3.557s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/waverover_base' for CMake module files
+[3.558s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/waverover_base' for CMake config files
+[3.558s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib'
+[3.558s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/bin'
+[3.559s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/pkgconfig/waverover_base.pc'
+[3.559s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages'
+[3.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('waverover_base', 'pythonpath')
+[3.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/hook/pythonpath.ps1'
+[3.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/hook/pythonpath.dsv'
+[3.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/hook/pythonpath.sh'
+[3.561s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/bin'
+[3.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(waverover_base)
+[3.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/package.ps1'
+[3.562s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/package.dsv'
+[3.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/package.sh'
+[3.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/package.bash'
+[3.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/waverover_base/package.zsh'
+[3.564s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/waverover_base/share/colcon-core/packages/waverover_base)
+[6.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/yesense_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface
+[6.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/yesense_interface -- -j8 -l8
+[24.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/yesense_interface -- -j8 -l8
+[24.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/yesense_interface
+[32.262s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yesense_interface)
+[32.263s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface' for CMake module files
+[32.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/yesense_interface
+[32.264s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface' for CMake config files
+[32.268s] Level 1:colcon.colcon_core.shell:create_environment_hook('yesense_interface', 'cmake_prefix_path')
+[32.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/cmake_prefix_path.ps1'
+[32.269s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/cmake_prefix_path.dsv'
+[32.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/cmake_prefix_path.sh'
+[32.270s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib'
+[32.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('yesense_interface', 'ld_library_path_lib')
+[32.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/ld_library_path_lib.ps1'
+[32.271s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/ld_library_path_lib.dsv'
+[32.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/ld_library_path_lib.sh'
+[32.273s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/bin'
+[32.273s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/pkgconfig/yesense_interface.pc'
+[32.273s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages'
+[32.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('yesense_interface', 'pythonpath')
+[32.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/pythonpath.ps1'
+[32.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/pythonpath.dsv'
+[32.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/pythonpath.sh'
+[32.277s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/bin'
+[32.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.ps1'
+[32.279s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.dsv'
+[32.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.sh'
+[32.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.bash'
+[32.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.zsh'
+[32.282s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/colcon-core/packages/yesense_interface)
+[32.283s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yesense_interface)
+[32.283s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface' for CMake module files
+[32.284s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface' for CMake config files
+[32.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('yesense_interface', 'cmake_prefix_path')
+[32.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/cmake_prefix_path.ps1'
+[32.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/cmake_prefix_path.dsv'
+[32.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/cmake_prefix_path.sh'
+[32.291s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib'
+[32.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('yesense_interface', 'ld_library_path_lib')
+[32.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/ld_library_path_lib.ps1'
+[32.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/ld_library_path_lib.dsv'
+[32.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/ld_library_path_lib.sh'
+[32.293s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/bin'
+[32.293s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/pkgconfig/yesense_interface.pc'
+[32.293s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages'
+[32.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('yesense_interface', 'pythonpath')
+[32.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/pythonpath.ps1'
+[32.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/pythonpath.dsv'
+[32.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/hook/pythonpath.sh'
+[32.296s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/bin'
+[32.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.ps1'
+[32.298s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.dsv'
+[32.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.sh'
+[32.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.bash'
+[32.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/yesense_interface/package.zsh'
+[32.302s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/share/colcon-core/packages/yesense_interface)
+[32.303s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rb3302-5/rb3302/robot_ws/src/yesense_std_ros2' with build type 'ament_cmake'
+[32.303s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rb3302-5/rb3302/robot_ws/src/yesense_std_ros2'
+[32.304s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.304s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[32.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/yesense_std_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2
+[35.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2' returned '0': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/yesense_std_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2
+[35.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2 -- -j8 -l8
+[58.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2' returned '0': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2 -- -j8 -l8
+[58.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2
+[58.671s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yesense_std_ros2)
+[58.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2' returned '0': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2
+[58.673s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2' for CMake module files
+[58.675s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2' for CMake config files
+[58.675s] Level 1:colcon.colcon_core.shell:create_environment_hook('yesense_std_ros2', 'cmake_prefix_path')
+[58.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/hook/cmake_prefix_path.ps1'
+[58.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/hook/cmake_prefix_path.dsv'
+[58.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/hook/cmake_prefix_path.sh'
+[58.684s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/lib'
+[58.685s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/bin'
+[58.685s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/lib/pkgconfig/yesense_std_ros2.pc'
+[58.685s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/lib/python3.12/site-packages'
+[58.686s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/bin'
+[58.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.ps1'
+[58.688s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.dsv'
+[58.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.sh'
+[58.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.bash'
+[58.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.zsh'
+[58.693s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/colcon-core/packages/yesense_std_ros2)
+[58.694s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yesense_std_ros2)
+[58.695s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2' for CMake module files
+[58.696s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2' for CMake config files
+[58.696s] Level 1:colcon.colcon_core.shell:create_environment_hook('yesense_std_ros2', 'cmake_prefix_path')
+[58.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/hook/cmake_prefix_path.ps1'
+[58.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/hook/cmake_prefix_path.dsv'
+[58.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/hook/cmake_prefix_path.sh'
+[58.700s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/lib'
+[58.700s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/bin'
+[58.700s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/lib/pkgconfig/yesense_std_ros2.pc'
+[58.700s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/lib/python3.12/site-packages'
+[58.701s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/bin'
+[58.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.ps1'
+[58.703s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.dsv'
+[58.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.sh'
+[58.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.bash'
+[58.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/yesense_std_ros2/package.zsh'
+[58.707s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2/share/colcon-core/packages/yesense_std_ros2)
+[58.708s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rb3302-5/rb3302/robot_ws/src/robot_init' with build type 'ament_cmake'
+[58.708s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rb3302-5/rb3302/robot_ws/src/robot_init'
+[58.709s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[58.709s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[58.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/robot_init': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/rb3302-5/rb3302/robot_ws/build/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/robot_init -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/robot_init
+[60.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/robot_init' returned '0': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/rb3302-5/rb3302/robot_ws/build/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/rb3302-5/rb3302/robot_ws/src/robot_init -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rb3302-5/rb3302/robot_ws/install/robot_init
+[60.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/robot_init': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/rb3302-5/rb3302/robot_ws/build/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/robot_init -- -j8 -l8
+[60.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/robot_init' returned '0': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/rb3302-5/rb3302/robot_ws/build/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rb3302-5/rb3302/robot_ws/build/robot_init -- -j8 -l8
+[60.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rb3302-5/rb3302/robot_ws/build/robot_init': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/rb3302-5/rb3302/robot_ws/build/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/robot_init
+[60.840s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_init)
+[60.840s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init' for CMake module files
+[60.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rb3302-5/rb3302/robot_ws/build/robot_init' returned '0': AMENT_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_std_ros2:/home/rb3302-5/rb3302/robot_ws/install/yesense_interface:/home/rb3302-5/rb3302/robot_ws/install/serial:/home/rb3302-5/rb3302/robot_ws/install/robot_model:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib:/home/rb3302-5/rb3302/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rb3302-5/rb3302/robot_ws/install/yesense_interface/lib/python3.12/site-packages:/home/rb3302-5/rb3302/robot_ws/build/waverover_base:/home/rb3302-5/rb3302/robot_ws/install/waverover_base/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rb3302-5/rb3302/robot_ws/build/robot_init
+[60.842s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init' for CMake config files
+[60.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_init', 'cmake_prefix_path')
+[60.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/hook/cmake_prefix_path.ps1'
+[60.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/hook/cmake_prefix_path.dsv'
+[60.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/hook/cmake_prefix_path.sh'
+[60.845s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init/bin'
+[60.845s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init/lib/pkgconfig/robot_init.pc'
+[60.845s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init/lib/python3.12/site-packages'
+[60.846s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init/bin'
+[60.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.ps1'
+[60.848s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.dsv'
+[60.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.sh'
+[60.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.bash'
+[60.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.zsh'
+[60.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/colcon-core/packages/robot_init)
+[60.853s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_init)
+[60.854s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init' for CMake module files
+[60.855s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init' for CMake config files
+[60.855s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_init', 'cmake_prefix_path')
+[60.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/hook/cmake_prefix_path.ps1'
+[60.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/hook/cmake_prefix_path.dsv'
+[60.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/hook/cmake_prefix_path.sh'
+[60.858s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init/bin'
+[60.859s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init/lib/pkgconfig/robot_init.pc'
+[60.859s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init/lib/python3.12/site-packages'
+[60.860s] Level 1:colcon.colcon_core.environment:checking '/home/rb3302-5/rb3302/robot_ws/install/robot_init/bin'
+[60.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.ps1'
+[60.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.dsv'
+[60.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.sh'
+[60.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.bash'
+[60.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/robot_init/package.zsh'
+[60.864s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rb3302-5/rb3302/robot_ws/install/robot_init/share/colcon-core/packages/robot_init)
+[60.865s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[60.866s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[60.866s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[60.866s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[60.884s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[60.884s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[60.885s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[60.946s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[60.947s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rb3302-5/rb3302/robot_ws/install/local_setup.ps1'
+[60.949s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rb3302-5/rb3302/robot_ws/install/_local_setup_util_ps1.py'
+[60.952s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rb3302-5/rb3302/robot_ws/install/setup.ps1'
+[60.954s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rb3302-5/rb3302/robot_ws/install/local_setup.sh'
+[60.956s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rb3302-5/rb3302/robot_ws/install/_local_setup_util_sh.py'
+[60.957s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rb3302-5/rb3302/robot_ws/install/setup.sh'
+[60.959s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rb3302-5/rb3302/robot_ws/install/local_setup.bash'
+[60.978s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rb3302-5/rb3302/robot_ws/install/setup.bash'
+[60.979s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rb3302-5/rb3302/robot_ws/install/local_setup.zsh'
+[60.980s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rb3302-5/rb3302/robot_ws/install/setup.zsh'

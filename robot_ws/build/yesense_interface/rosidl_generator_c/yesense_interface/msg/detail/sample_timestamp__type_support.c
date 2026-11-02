@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "yesense_interface/msg/detail/sample_timestamp__type_support.h"
 #include "yesense_interface/msg/detail/sample_timestamp__functions.h"
+#include "yesense_interface/msg/detail/sample_timestamp__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "yesense_interface/msg/detail/sample_timestamp__struct.h"
 
 #ifdef __cplusplus

@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "yesense_interface/msg/detail/robot_lord__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "yesense_interface/msg/detail/robot_lord__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "yesense_interface/msg/detail/robot_lord__struct.h"
 #include "yesense_interface/msg/detail/robot_lord__type_support.h"
 
 #ifdef __cplusplus

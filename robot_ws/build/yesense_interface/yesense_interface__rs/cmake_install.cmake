@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface/yesense_interface__rs
+# Install script for directory: /home/rb3302-5/rb3302/robot_ws/build/yesense_interface/yesense_interface__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/rb3302_final_proj_code/robot_ws/install/yesense_interface")
+  set(CMAKE_INSTALL_PREFIX "/home/rb3302-5/rb3302/robot_ws/install/yesense_interface")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

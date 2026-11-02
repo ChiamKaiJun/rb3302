@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/src/robot_init
+CMAKE_SOURCE_DIR = /home/rb3302-5/rb3302/robot_ws/src/robot_init
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init
+CMAKE_BINARY_DIR = /home/rb3302-5/rb3302/robot_ws/build/robot_init
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init/CMakeFiles /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rb3302-5/rb3302/robot_ws/build/robot_init/CMakeFiles /home/rb3302-5/rb3302/robot_ws/build/robot_init//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rb3302-5/rb3302/robot_ws/build/robot_init/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

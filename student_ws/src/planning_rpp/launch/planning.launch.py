@@ -104,7 +104,7 @@ def generate_launch_description():
                 'odom0_config': [
                     False, False, False,
                     False, False, False,
-                    False, False, False, ## 26 oct, tried and tested, change 1st to False
+                    True, False, False, ## 26 oct, tried and tested, change 1st to False
                     False, False, False,
                     False, False, False,
                 ],
@@ -119,7 +119,7 @@ def generate_launch_description():
                     False, False, True,
                     False, False, False,
                     False, False, True,
-                    False, False, False,
+                    True, False, False, ## 27 oct, 1st changed to True
                 ],
                 'imu0_queue_size': 50,
                 'imu0_differential': False,

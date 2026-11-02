@@ -1,1 +1,1 @@
-/home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface/rosidl_generator_rs/yesense_interface/rust/build.rs
+/home/rb3302-5/rb3302/robot_ws/build/yesense_interface/rosidl_generator_rs/yesense_interface/rust/build.rs

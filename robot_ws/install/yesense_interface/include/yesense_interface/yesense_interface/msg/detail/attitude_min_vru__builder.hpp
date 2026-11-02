@@ -1,1 +1,1 @@
-/home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface/rosidl_generator_cpp/yesense_interface/msg/detail/attitude_min_vru__builder.hpp
+/home/rb3302-5/rb3302/robot_ws/build/yesense_interface/rosidl_generator_cpp/yesense_interface/msg/detail/attitude_min_vru__builder.hpp

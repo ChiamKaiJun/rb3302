@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "yesense_interface/msg/detail/nav_min__type_support.h"
+#include "yesense_interface/msg/detail/nav_min__functions.h"
 #include "yesense_interface/msg/detail/nav_min__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "yesense_interface/msg/detail/nav_min__functions.h"
 
 #ifdef __cplusplus
 extern "C"

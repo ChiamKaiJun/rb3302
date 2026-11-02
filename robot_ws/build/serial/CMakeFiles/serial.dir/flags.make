@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ubuntu/rb3302_final_proj_code/robot_ws/src/serial/include
+CXX_INCLUDES = -I/home/rb3302-5/rb3302/robot_ws/src/serial/include
 
 CXX_FLAGS =  -Wall -Wextra -Wpedantic -std=gnu++14
 

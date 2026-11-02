@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_std_ros2
+CMAKE_SOURCE_DIR = /home/rb3302-5/rb3302/robot_ws/src/yesense_std_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_std_ros2
+CMAKE_BINARY_DIR = /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2
 
 # Utility rule file for yesense_std_ros2_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/yesense_std_ros2_uninstall.dir/compiler_depend.make
 include CMakeFiles/yesense_std_ros2_uninstall.dir/progress.make
 
 CMakeFiles/yesense_std_ros2_uninstall:
-	/usr/bin/cmake -P /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_std_ros2/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 yesense_std_ros2_uninstall: CMakeFiles/yesense_std_ros2_uninstall
 yesense_std_ros2_uninstall: CMakeFiles/yesense_std_ros2_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/yesense_std_ros2_uninstall.dir/clean:
 .PHONY : CMakeFiles/yesense_std_ros2_uninstall.dir/clean
 
 CMakeFiles/yesense_std_ros2_uninstall.dir/depend:
-	cd /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_std_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_std_ros2 /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_std_ros2 /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_std_ros2 /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_std_ros2 /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_std_ros2/CMakeFiles/yesense_std_ros2_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rb3302-5/rb3302/robot_ws/src/yesense_std_ros2 /home/rb3302-5/rb3302/robot_ws/src/yesense_std_ros2 /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2 /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2 /home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2/CMakeFiles/yesense_std_ros2_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/yesense_std_ros2_uninstall.dir/depend
 

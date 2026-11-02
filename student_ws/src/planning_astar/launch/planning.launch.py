@@ -116,9 +116,10 @@ def generate_launch_description():
                 'imu0': imu_topic,
                 'imu0_config': [
                     False, False, False,
-                    True, False, True ## 3rd changed to False, back to True
-                    False, False, False, ## 
-                    True, False, False, ## 1st changed to False, back to True
+                    False, False, True, ## 3rd changed to False, back to True
+                    False, False, False,
+                    False, False, True, ## 3rd changed to False, back to True
+                    False, False, False,
                 ],
                 'imu0_queue_size': 50,
                 'imu0_differential': False,

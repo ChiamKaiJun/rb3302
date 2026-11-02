@@ -1,7 +1,7 @@
 # generated from
 # ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_uninstall_script.cmake.in
 
-set(install_manifest "/home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_std_ros2/symlink_install_manifest.txt")
+set(install_manifest "/home/rb3302-5/rb3302/robot_ws/build/yesense_std_ros2/symlink_install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find symlink install manifest: ${install_manifest}")
 endif()

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_interface
+CMAKE_SOURCE_DIR = /home/rb3302-5/rb3302/robot_ws/src/yesense_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface
+CMAKE_BINARY_DIR = /home/rb3302-5/rb3302/robot_ws/build/yesense_interface
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_interface /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_interface /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rb3302-5/rb3302/robot_ws/build/yesense_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rb3302-5/rb3302/robot_ws/src/yesense_interface /home/rb3302-5/rb3302/robot_ws/src/yesense_interface /home/rb3302-5/rb3302/robot_ws/build/yesense_interface /home/rb3302-5/rb3302/robot_ws/build/yesense_interface /home/rb3302-5/rb3302/robot_ws/build/yesense_interface/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

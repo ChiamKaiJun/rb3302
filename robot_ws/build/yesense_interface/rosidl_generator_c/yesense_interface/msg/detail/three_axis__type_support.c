@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "yesense_interface/msg/detail/three_axis__struct.h"
 #include "yesense_interface/msg/detail/three_axis__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "yesense_interface/msg/detail/three_axis__type_support.h"
-#include "yesense_interface/msg/detail/three_axis__struct.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "yesense_interface/msg/detail/sensor_temp__functions.h"
 #include "yesense_interface/msg/detail/sensor_temp__struct.h"
+#include "yesense_interface/msg/detail/sensor_temp__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "yesense_interface/msg/detail/sensor_temp__type_support.h"
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/src/robot_init
+CMAKE_SOURCE_DIR = /home/rb3302-5/rb3302/robot_ws/src/robot_init
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init
+CMAKE_BINARY_DIR = /home/rb3302-5/rb3302/robot_ws/build/robot_init
 
 # Utility rule file for robot_init_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/robot_init_uninstall.dir/compiler_depend.make
 include CMakeFiles/robot_init_uninstall.dir/progress.make
 
 CMakeFiles/robot_init_uninstall:
-	/usr/bin/cmake -P /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/rb3302-5/rb3302/robot_ws/build/robot_init/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 robot_init_uninstall: CMakeFiles/robot_init_uninstall
 robot_init_uninstall: CMakeFiles/robot_init_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/robot_init_uninstall.dir/clean:
 .PHONY : CMakeFiles/robot_init_uninstall.dir/clean
 
 CMakeFiles/robot_init_uninstall.dir/depend:
-	cd /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/rb3302_final_proj_code/robot_ws/src/robot_init /home/ubuntu/rb3302_final_proj_code/robot_ws/src/robot_init /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init /home/ubuntu/rb3302_final_proj_code/robot_ws/build/robot_init/CMakeFiles/robot_init_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rb3302-5/rb3302/robot_ws/build/robot_init && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rb3302-5/rb3302/robot_ws/src/robot_init /home/rb3302-5/rb3302/robot_ws/src/robot_init /home/rb3302-5/rb3302/robot_ws/build/robot_init /home/rb3302-5/rb3302/robot_ws/build/robot_init /home/rb3302-5/rb3302/robot_ws/build/robot_init/CMakeFiles/robot_init_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/robot_init_uninstall.dir/depend
 

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "yesense_interface/msg/detail/tid__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "yesense_interface/msg/detail/tid__functions.h"
 #include "yesense_interface/msg/detail/tid__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "yesense_interface/msg/detail/tid__struct.h"
 
 #ifdef __cplusplus
 extern "C"

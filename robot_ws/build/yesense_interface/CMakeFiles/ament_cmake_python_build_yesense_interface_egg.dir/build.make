@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_interface
+CMAKE_SOURCE_DIR = /home/rb3302-5/rb3302/robot_ws/src/yesense_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface
+CMAKE_BINARY_DIR = /home/rb3302-5/rb3302/robot_ws/build/yesense_interface
 
 # Utility rule file for ament_cmake_python_build_yesense_interface_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/compiler_d
 include CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_yesense_interface_egg:
-	cd /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface/ament_cmake_python/yesense_interface && /usr/bin/python3 setup.py egg_info
+	cd /home/rb3302-5/rb3302/robot_ws/build/yesense_interface/ament_cmake_python/yesense_interface && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_yesense_interface_egg: CMakeFiles/ament_cmake_python_build_yesense_interface_egg
 ament_cmake_python_build_yesense_interface_egg: CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/depend:
-	cd /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_interface /home/ubuntu/rb3302_final_proj_code/robot_ws/src/yesense_interface /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface /home/ubuntu/rb3302_final_proj_code/robot_ws/build/yesense_interface/CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rb3302-5/rb3302/robot_ws/build/yesense_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rb3302-5/rb3302/robot_ws/src/yesense_interface /home/rb3302-5/rb3302/robot_ws/src/yesense_interface /home/rb3302-5/rb3302/robot_ws/build/yesense_interface /home/rb3302-5/rb3302/robot_ws/build/yesense_interface /home/rb3302-5/rb3302/robot_ws/build/yesense_interface/CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_build_yesense_interface_egg.dir/depend
 
