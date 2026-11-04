@@ -9,5 +9,8 @@ setup(
         ('share/rb3302_nav/config', glob('config/*')),
     ],
     install_requires=['setuptools', 'numpy', 'Pillow', 'PyYAML'],
-    entry_points={'console_scripts': ['path_preview = rb3302_nav.path_preview:main']},
+    entry_points={'console_scripts': [
+    'path_preview = rb3302_nav.path_preview:main',
+    'run_course = rb3302_nav.run_course:main',
+    ]},
 )
