@@ -137,6 +137,6 @@ ros2 launch planning_rpp planning.launch.py
 Test with Start and Goals Set  
 ```bash
 ros2 run rb3302_nav run_course \
---start S --bearing E --goals H C C X \
+--start S --bearing E --goals H C F K \
 --course "$PWD/maps/course_letters.yaml"
 ```
