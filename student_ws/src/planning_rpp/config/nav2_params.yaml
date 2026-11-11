@@ -39,33 +39,33 @@ controller_server:
       plugin: planning_rpp::NoProgressChecker
     goal_checker:
       plugin: nav2_controller::SimpleGoalChecker
-      xy_goal_tolerance: 0.02 ## 26 oct
+      xy_goal_tolerance: 0.10 ## 26 oct
       # Arrive aligned with the final path segment and stopped before the waypoint wait.
-      yaw_goal_tolerance: 0.05 # radians, about 2.9 degrees
+      yaw_goal_tolerance: 0.15 # radians, about 2.9 degrees
       stateful: True ## 26 oct
     FollowPath:
       plugin: nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
-      desired_linear_vel: 0.2
-      lookahead_dist: 0.3 ## 27 oct, 0.6 -> 0.3
-      min_lookahead_dist: 0.3 #0.3
-      max_lookahead_dist: 0.5 #0.9
+      desired_linear_vel: 0.20
+      lookahead_dist: 0.20   ## 27 oct, 0.6 -> 0.3
+      #min_lookahead_dist: 0.15 #0.3
+      #max_lookahead_dist: 0.25 #0.9
       lookahead_time: 1.5
-      rotate_to_heading_angular_vel: 2.0 # rad/s, target speed for in-place heading turns
+      rotate_to_heading_angular_vel: 2.5 # rad/s, target speed for in-place heading turns
       transform_tolerance: 0.1
       use_velocity_scaled_lookahead_dist: false
-      min_approach_linear_velocity: 0.10
+      min_approach_linear_velocity: 0.15
       approach_velocity_scaling_dist: 0.6
-      use_collision_detection: false ## 2 nov, true -> false -> true
-      max_allowed_time_to_collision_up_to_carrot: 0.1
+      use_collision_detection: true ## 2 nov, true -> false -> true
+      max_allowed_time_to_collision_up_to_carrot: 1.0
       use_regulated_linear_velocity_scaling: true ## 27 oct, false -> true -> false -> true
       use_cost_regulated_linear_velocity_scaling: false ## 2 nov, true -> false -> true
       regulated_linear_scaling_min_radius: 0.10
-      regulated_linear_scaling_min_speed: 0.15
+      regulated_linear_scaling_min_speed: 0.05
       allow_reversing: false
       use_rotate_to_heading: true
       stateful: true # Finish the arrival heading once XY tolerance is reached.
-      rotate_to_heading_min_angle: 1.2 ## 2 nov, 0.785 -> 0.2 -> 0.875
-      max_angular_accel: 10.0 # rad/s^2, matched to the velocity smoother
+      rotate_to_heading_min_angle: 1.5 ## 2 nov, 0.785 -> 0.2 -> 0.875
+      max_angular_accel: 20.0 # rad/s^2, matched to the velocity smoother
 
 local_costmap:
   local_costmap:
@@ -80,7 +80,7 @@ local_costmap:
       # footprint is a square of 0.01m x 0.01m, plus 0.1m padding, for a total footprint of 0.21m
       # robot size if around 20cm x 20cm
       #footprint: "[[-0.005, -0.005], [0.005, -0.005], [0.005, 0.005], [-0.005, 0.005]]" ## KJ incresae size 26 oct, all values changed in magnitude from 0.025 t0 0.10, 27 oct, all values changed back to magnitude of 0.025      
-      footprint: "[[-0.010, -0.010], [0.010, -0.010], [0.010, 0.010], [-0.010, 0.010]]"
+      footprint: "[[-0.10, -0.10], [0.10, -0.10], [0.10, 0.10], [-0.10, 0.10]]"
       #footprint_padding: 0.1 ## 26 oct 0.04 + 0.01 + 0.01 = 0.06cm
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
@@ -98,8 +98,8 @@ local_costmap:
           marking: true
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer
-        inflation_radius: 0.10 # metres, match the global costmap's wall-clearance field
-        cost_scaling_factor: 10.0 # gentler cost decay to discourage wall-hugging paths
+        inflation_radius: 0.30 # metres, match the global costmap's wall-clearance field
+        cost_scaling_factor: 6.0 # gentler cost decay to discourage wall-hugging paths
       always_send_full_costmap: true
 
 global_costmap:  ## for astar 
@@ -111,7 +111,7 @@ global_costmap:  ## for astar
       resolution: 0.05
       # global cost map take a larger footprint compared to local costmap
       # footprint plus padding is 23cm x 23cm
-      footprint: "[[-0.010, -0.010], [0.010, -0.010], [0.010, 0.010], [-0.010, 0.010]]"
+      footprint: "[[-0.10, -0.10], [0.10, -0.10], [0.10, 0.10], [-0.10, 0.10]]"
       # footprint: "[[-0.005, -0.005], [0.005, -0.005], [0.005, 0.005], [-0.005, 0.005]]" ## 26 oct, all values changed in magnitude from 0.025 t0 0.10, 27 oct, all values changed back to magnitude of 0.025
       footprint_padding: 0.03 ## 26 oct, 27 oct chnaged from 0.1 to 0.0 -> 0.1
       track_unknown_space: true # current footprint size is 0.005m+0.005m+0.1m+0.1m = 0.21m 
@@ -129,8 +129,8 @@ global_costmap:  ## for astar
           marking: true
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer
-        inflation_radius: 0.20 # metres, match the local costmap
-        cost_scaling_factor: 5.0
+        inflation_radius: 0.25 # metres, match the local costmap
+        cost_scaling_factor: 6.0
       always_send_full_costmap: true
 
 map_server:
@@ -146,7 +146,7 @@ planner_server:
       plugin: nav2_navfn_planner::NavfnPlanner
       use_astar: true
       # Use the direction of the final path segment, rather than the goal arrow.
-      use_final_approach_orientation: true
+      use_final_approach_orientation: false
 
 smoother_server:
   ros__parameters:
@@ -180,10 +180,10 @@ velocity_smoother:
     use_sim_time: false
     smoothing_frequency: 20.0
     feedback: OPEN_LOOP
-    max_velocity: [0.5, 0.0, 3.5] # chnaged 3rd value 
-    min_velocity: [-0.5, 0.0, -3.5] # changed 3rd value
-    max_accel: [0.2, 0.0, 2.0]
-    max_decel: [-0.5, 0.0, -2.0]
+    max_velocity: [0.3, 0.0, 3.0] # chnaged 3rd value 
+    min_velocity: [-0.3, 0.0, -3.0] # changed 3rd value
+    max_accel: [1.0, 0.0, 6.0] # previously 0.5,0.0,4.5
+    max_decel: [-1.0, 0.0, -6.0] # previously -0.5,0.0,-4.5
     odom_topic: /odom
     enable_stamped_cmd_vel: false
 
