@@ -7,6 +7,10 @@
   <maintainer email="ldaowen@gmail.com">ldaowen</maintainer>
   <license>Apache-2.0</license>
 
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>nav2_core</depend>
+  <depend>pluginlib</depend>
+
   <exec_depend>navigation2</exec_depend>
   <exec_depend>nav2_map_server</exec_depend>
   <exec_depend>nav2_amcl</exec_depend>

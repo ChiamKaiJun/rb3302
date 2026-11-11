@@ -38,7 +38,7 @@
   <!-- Measured sensor geometry. H30 is 50 mm above base origin. The LiDAR
        is 52 mm behind and 40 mm above the H30. -->
   <xacro:property name="imu_mount_z" value="0.050"/>
-  <xacro:property name="lidar_from_imu_x" value="-0.052"/>
+  <xacro:property name="lidar_from_imu_x" value="0.050"/>
   <!-- gyro_link has down-positive Z because the H30 is installed FRD. -->
   <xacro:property name="lidar_from_imu_z" value="-0.040"/>
 

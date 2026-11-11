@@ -87,7 +87,10 @@ def generate_launch_description():
             'normalize_scan_time', default_value='true',
             description='Cap overlapping 2D RP Lidar per-beam timestamps'),
         DeclareLaunchArgument('odom_topic', default_value='/odom'),
-        DeclareLaunchArgument('resolution', default_value='0.05'),
+        DeclareLaunchArgument(
+            'resolution', default_value='0.05',
+            description='Published /map cell size in metres; scan-matching '
+                        'grid size is configured separately in the Lua file'),
         DeclareLaunchArgument('rviz', default_value='true'),
         DeclareLaunchArgument(
             'configuration_directory',

@@ -119,7 +119,7 @@ def generate_launch_description():
                     False, False, True,
                     False, False, False,
                     False, False, True,
-                    True, False, False, ## 27 oct, 1st changed to True
+                    False, False, False, ## 27 oct, 1st changed to True
                 ],
                 'imu0_queue_size': 50,
                 'imu0_differential': False,

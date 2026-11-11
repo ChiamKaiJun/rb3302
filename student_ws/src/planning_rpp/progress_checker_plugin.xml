@@ -1,0 +1,5 @@
+<library path="no_progress_checker">
+  <class type="planning_rpp::NoProgressChecker" base_class_type="nav2_core::ProgressChecker">
+    <description>Always accepts progress; disables movement-based progress timeouts.</description>
+  </class>
+</library>

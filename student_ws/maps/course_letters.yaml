@@ -1,6 +1,10 @@
-# Estimated centres from the user-confirmed letter_grid_preview.png overlay.
-# Image-edge bounds: left=8, right=78, top=10, bottom=56 pixels; 6 columns x 4 rows.
-# Physical measurements are still pending; calibrated remains false.
+# Provisional 60 cm centre spacing; 6 columns x 4 rows, A-F at the top.
+# A is (0,0), using its previous estimated map location as the reference.
+# +X points right; +Y points up, so rows below A have negative Y.
+# These are nominal targets, not measured centres. Calibrate each physical centre.
+# Original map/coordinates, including measured F, are preserved in maps/backups/.
+# Old-frame readings must be translated before reuse: x_new=x_old+0.442333,
+# y_new=y_old-0.2625. calibrated remains false pending physical verification.
 # heading_offset_deg: course EAST relative to map +X (counter-clockwise).
 # robot_radius_m: provisional enclosing circle; measure before driving.
 map_yaml: rb3302_map.yaml
@@ -10,74 +14,74 @@ heading_offset_deg: 0.0
 robot_radius_m: 0.22
 letters:
   A:
-    x: -0.442333
-    y: 0.2625
+    x: 0.0
+    y: 0.0
   B:
-    x: 0.141
-    y: 0.2625
+    x: 0.6
+    y: 0.0
   C:
-    x: 0.724333
-    y: 0.2625
+    x: 1.2
+    y: 0.0
   D:
-    x: 1.307667
-    y: 0.2625
+    x: 1.8
+    y: 0.0
   E:
-    x: 1.891
-    y: 0.2625
+    x: 2.4
+    y: 0.0
   F:
-    x: 2.474333
-    y: 0.2625
+    x: 3.0
+    y: 0.0
   G:
-    x: -0.442333
-    y: -0.3125
+    x: 0.0
+    y: -0.6
   H:
-    x: 0.141
-    y: -0.3125
+    x: 0.6
+    y: -0.6
   I:
-    x: 0.724333
-    y: -0.3125
+    x: 1.2
+    y: -0.6
   J:
-    x: 1.307667
-    y: -0.3125
+    x: 1.8
+    y: -0.6
   K:
-    x: 1.891
-    y: -0.3125
+    x: 2.4
+    y: -0.7
   L:
-    x: 2.474333
-    y: -0.3125
+    x: 3.0
+    y: -0.6
   M:
-    x: -0.442333
-    y: -0.8875
+    x: 0.0
+    y: -1.2
   N:
-    x: 0.141
-    y: -0.8875
+    x: 0.6
+    y: -1.2
   O:
-    x: 0.724333
-    y: -0.8875
+    x: 1.2
+    y: -1.2
   P:
-    x: 1.307667
-    y: -0.8875
+    x: 1.8
+    y: -1.2
   Q:
-    x: 1.891
-    y: -0.8875
+    x: 2.4
+    y: -1.2
   R:
-    x: 2.474333
-    y: -0.8875
+    x: 3.0
+    y: -1.2
   S:
-    x: -0.442333
-    y: -1.4625
+    x: 0.0
+    y: -1.8
   T:
-    x: 0.141
-    y: -1.4625
+    x: 0.6
+    y: -1.8
   U:
-    x: 0.724333
-    y: -1.4625
+    x: 1.2
+    y: -1.8
   V:
-    x: 1.307667
-    y: -1.4625
+    x: 1.8
+    y: -1.8
   W:
-    x: 1.891
-    y: -1.4625
+    x: 2.4
+    y: -1.8
   X:
-    x: 2.474333
-    y: -1.4625
+    x: 3.0
+    y: -1.8

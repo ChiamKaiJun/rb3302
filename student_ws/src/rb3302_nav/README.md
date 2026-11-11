@@ -8,6 +8,8 @@ There is no separate planning-only mode or launch in this package.
 - `config/run.yaml`: starting square, bearing and four ordered goals (repeats allowed).
 - `../../maps/course_letters.yaml`: letter coordinates, map file and heading offset.
 - `rb3302_nav/course.py`: validate inputs and convert coordinates.
+- `rb3302_nav/calibrate_goal.py`: save a physically verified letter centre from live TF
+  or previously measured map coordinates.
 - `rb3302_nav/path_preview.py`: request the programmed start-to-first-goal path from
   the running Nav2 planner. Formerly stage1_runner.py.
 - `rb3302_nav/render.py`: save the returned path as PNG and text.
@@ -16,7 +18,8 @@ There is no separate planning-only mode or launch in this package.
 
 The preview uses the programmed start, not the AMCL estimate, and does not initialise
 AMCL or command motion. The normal navigation costmap still requires working robot
-transforms and localisation. Four-goal mission execution is not implemented yet.
+transforms and localisation. `run_course` executes four ordered letter goals through
+the running Nav2 waypoint follower.
 The course robot radius metadata is no longer applied to Nav2 by a wrapper: actual
 collision settings now come exclusively from planning_astar/config/nav2_params.yaml.
 That provided configuration has a small original footprint; measure and correct it
@@ -67,6 +70,53 @@ ros2 run tf2_ros tf2_echo map base_link
 This prints robot position/orientation in the map frame. Ctrl+C stops the inspection.
 Resolve missing transforms/scans before changing AMCL noise parameters.
 
+## Calibrate letter centres
+
+Calibration records where a physically verified centre is in the map; it does not
+drive the robot, recognise a floor letter, or correct AMCL. First verify the lidar
+mounting transform and scan-to-map alignment. Keep the same map loaded in Nav2 as
+the map referenced by `course_letters.yaml`.
+
+Build the new command once from `student_ws`, then source the workspace:
+
+```bash
+colcon build --symlink-install --packages-select rb3302_nav
+source install/setup.bash
+```
+
+Cancel the active navigation mission, keep localisation running, and teleoperate
+until `base_link` is stationary over the physical letter centre. From `student_ws`,
+record F with:
+
+```bash
+ros2 run rb3302_nav calibrate_goal --letter F \
+  --course "$PWD/maps/course_letters.yaml"
+```
+
+The command captures a fresh `map -> base_link` transform and writes only that
+letter's X/Y. It preserves YAML comments, refuses occupied/unknown or out-of-map
+points, and keeps the previous file as `course_letters.yaml.bak` (replaced on each
+successful calibration). It times out after 10 seconds if fresh TF is unavailable.
+Live capture uses the real-time clock of the hardware stack.
+
+To save a previously measured position instead, without needing live ROS nodes:
+
+```bash
+ros2 run rb3302_nav calibrate_goal --letter F --x 2.396 --y 0.145 \
+  --course "$PWD/maps/course_letters.yaml"
+```
+
+Repeat separately for each required letter; one measurement cannot determine the
+other centres. The overall `calibrated` flag is not changed automatically. Set it
+to `true` only after all centres and `heading_offset_deg` have been verified.
+The flag controls a warning; it does not perform calibration. Record positions only
+with reliable localisation; TF reports an estimate, not independent physical truth.
+
+Rerun `run_course` with the same explicit `--course` path to use the updated goals.
+No navigation restart or rebuild is needed after editing just the course YAML.
+`--start F` also uses F's updated coordinates to initialise localisation, so start
+physically at F with the specified bearing. Direct RViz goals do not read this YAML.
+
 ## Optional path preview after localisation works
 
 Edit run.yaml, then in another sourced terminal from the main project folder:
@@ -88,4 +138,4 @@ PYTHONPATH=student_ws/src/rb3302_nav python3 -m unittest discover -s student_ws/
 ```
 
 These offline tests need NumPy, Pillow and PyYAML. They do not test Nav2 startup.
-ROS execution must be verified on the lab machine; this Mac has no ROS runtime.
+Live navigation and physical calibration accuracy must be verified on the robot.

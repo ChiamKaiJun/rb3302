@@ -12,5 +12,6 @@ setup(
     entry_points={'console_scripts': [
     'path_preview = rb3302_nav.path_preview:main',
     'run_course = rb3302_nav.run_course:main',
+    'calibrate_goal = rb3302_nav.calibrate_goal:main',
     ]},
 )
