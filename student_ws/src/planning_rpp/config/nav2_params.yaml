@@ -38,12 +38,10 @@ controller_server:
       # Keep the plugin interface, but disable movement-based progress failures.
       plugin: planning_rpp::NoProgressChecker
     goal_checker:
-      plugin: nav2_controller::StoppedGoalChecker
+      plugin: nav2_controller::SimpleGoalChecker
       xy_goal_tolerance: 0.02 ## 26 oct
       # Arrive aligned with the final path segment and stopped before the waypoint wait.
       yaw_goal_tolerance: 0.05 # radians, about 2.9 degrees
-      trans_stopped_velocity: 0.02 # m/s
-      rot_stopped_velocity: 0.05 # rad/s
       stateful: True ## 26 oct
     FollowPath:
       plugin: nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
@@ -81,8 +79,9 @@ local_costmap:
       resolution: 0.05
       # footprint is a square of 0.01m x 0.01m, plus 0.1m padding, for a total footprint of 0.21m
       # robot size if around 20cm x 20cm
-      footprint: "[[-0.005, -0.005], [0.005, -0.005], [0.005, 0.005], [-0.005, 0.005]]" ## KJ incresae size 26 oct, all values changed in magnitude from 0.025 t0 0.10, 27 oct, all values changed back to magnitude of 0.025      
-      footprint_padding: 0.1 ## 26 oct 0.04 + 0.01 + 0.01 = 0.06cm
+      #footprint: "[[-0.005, -0.005], [0.005, -0.005], [0.005, 0.005], [-0.005, 0.005]]" ## KJ incresae size 26 oct, all values changed in magnitude from 0.025 t0 0.10, 27 oct, all values changed back to magnitude of 0.025      
+      footprint: "[[-0.010, -0.010], [0.010, -0.010], [0.010, 0.010], [-0.010, 0.010]]"
+      #footprint_padding: 0.1 ## 26 oct 0.04 + 0.01 + 0.01 = 0.06cm
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
       static_layer:
@@ -112,8 +111,9 @@ global_costmap:  ## for astar
       resolution: 0.05
       # global cost map take a larger footprint compared to local costmap
       # footprint plus padding is 23cm x 23cm
-      footprint: "[[-0.005, -0.005], [0.005, -0.005], [0.005, 0.005], [-0.005, 0.005]]" ## 26 oct, all values changed in magnitude from 0.025 t0 0.10, 27 oct, all values changed back to magnitude of 0.025
-      footprint_padding: 0.13 ## 26 oct, 27 oct chnaged from 0.1 to 0.0 -> 0.1
+      footprint: "[[-0.010, -0.010], [0.010, -0.010], [0.010, 0.010], [-0.010, 0.010]]"
+      # footprint: "[[-0.005, -0.005], [0.005, -0.005], [0.005, 0.005], [-0.005, 0.005]]" ## 26 oct, all values changed in magnitude from 0.025 t0 0.10, 27 oct, all values changed back to magnitude of 0.025
+      footprint_padding: 0.03 ## 26 oct, 27 oct chnaged from 0.1 to 0.0 -> 0.1
       track_unknown_space: true # current footprint size is 0.005m+0.005m+0.1m+0.1m = 0.21m 
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
       static_layer:
