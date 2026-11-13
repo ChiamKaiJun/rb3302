@@ -104,8 +104,8 @@ local_costmap:
 
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer
-        inflation_radius: 0.35 # metres, match the global costmap's wall-clearance field
-        cost_scaling_factor: 3.0 # gentler cost decay to discourage wall-hugging paths
+        inflation_radius: 0.15 # metres, match the global costmap's wall-clearance field
+        cost_scaling_factor: 6.0 # gentler cost decay to discourage wall-hugging paths
       always_send_full_costmap: true
 
 global_costmap:  ## for astar 
@@ -140,8 +140,8 @@ global_costmap:  ## for astar
           
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer
-        inflation_radius: 0.35 # metres, match the local costmap
-        cost_scaling_factor: 3.0
+        inflation_radius: 0.15 # metres, match the local costmap
+        cost_scaling_factor: 6.0
       always_send_full_costmap: true
 
 map_server:
